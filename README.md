@@ -1,6 +1,6 @@
 # AlgoVauit · 路径规划算法
 
-本分支保存 `~/ws11` 的完整快照，是基于 ROS 2 Humble 的二维/三维路径规划、RViz2 可视化与算法性能对比工作空间。
+本分支保存 `~/ws11` 的完整快照，重点整理基于 ROS 2 Humble 的二维路径规划算法、RViz2 可视化与性能对比。
 
 分支导航：[main](https://github.com/Jon-wang6/AlgoVauit/tree/main) · **path-planning**
 
@@ -11,162 +11,89 @@ git clone --branch path-planning --single-branch https://github.com/Jon-wang6/Al
 cd ws11
 ```
 
-> **文件说明**：本文档是工作空间总览，不定义程序类或函数；内容包括全部文件职责、
-> 三维/二维运行链路、各节点输入输出、构建启动命令、RViz 操作方法和 VS Code 配置说明。
+仓库仍保留早期三维路径规划示例代码，仅供参考，本 README 不再展开介绍。
 
-本工作空间把教程中的 `grid_path_searcher`、`waypoint_generator` 和 `rviz_plugins` 适配到了 Ubuntu 22.04 + ROS 2 Humble。默认演示使用三维点云地图，同时运行 JPS 和 A*；另保留二维 `OccupancyGrid` 兼容入口。
+## 二维算法
 
-工作空间另外包含独立的 `grid_path_searcher_2d` 包：它生成随机二维栅格地图，
-对比 A*、TimeBreak A*、Dijkstra、JPS、PRM、RRT、RRT*、Anytime RRT*、
-Informed RRT* 与 Kinodynamic RRT*，并在 RViz2 中显示搜索范围、路径和实时参数面板。
+核心包 `grid_path_searcher_2d` 在同一张随机二维栅格地图上运行并对比以下算法：
 
-## 目录与文件职责
+| 算法 | 主要特点 |
+| --- | --- |
+| Dijkstra | 无启发式的最短路基准算法。 |
+| A* | 使用启发函数加速栅格搜索。 |
+| TimeBreak A* | 受时间预算约束的 A* 版本。 |
+| JPS | 通过跳点和强迫邻居减少扩展节点。 |
+| PRM | 先随机采样构建路线图，再执行图搜索。 |
+| RRT | 通过随机树快速探索可行空间。 |
+| RRT* | 通过择父与重连逐步优化路径。 |
+| Anytime RRT* | 在给定时间内持续改进已有解。 |
+| Informed RRT* | 获得初始解后在椭圆区域内集中采样。 |
+| Kinodynamic RRT* | 在运动学约束下扩展并优化轨迹。 |
 
-### grid_path_searcher
-
-| 文件 | 功能 |
-|---|---|
-| `src/random_complex_node.cpp` | 生成随机柱体和三维圆环，发布 `/random_complex/global_map` 点云。 |
-| `src/demo_node.cpp` | 接收三维点云和航点，建立占据栅格，调用 JPS/A*，发布 RViz Marker。 |
-| `include/graph_searcher.hpp` | 声明栅格节点、JPS 邻居表和三维搜索器接口。 |
-| `src/graph_searcher.cpp` | 实现坐标转换、占据检查、A*、JPS、跳点递归和路径回溯。 |
-| `src/occupancy_demo_node.cpp` | 在二维 `OccupancyGrid` 上执行八邻域 A*，兼容旧教程数据。 |
-| `launch/demo_launch.py` | 启动默认三维演示的全部节点。 |
-| `launch/occupancy_demo_launch.py` | 启动二维规划器、航点生成器和二维 RViz。 |
-| `launch/demo_with_data_launch.py` | 在二维启动文件基础上自动循环播放教程 rosbag2。 |
-| `data/tutorial_demo/` | 转换后的二维教程地图包；`.db3` 是二进制消息数据库，`metadata.yaml` 是索引。 |
-
-### waypoint_generator
+## 核心文件
 
 | 文件 | 功能 |
-|---|---|
-| `src/waypoint_generator.cpp` | 接收 `/goal`，根据模式生成手动或预设航点并发布 `nav_msgs/Path`。 |
-| `include/sample_waypoints.hpp` | 提供单点折线、圆形和三维八字形的预设控制点。 |
+| --- | --- |
+| `src/grid_path_searcher_2d/include/grid_path_searcher_2d/grid_searcher_2d.hpp` | 声明二维地图索引、搜索结果和算法接口。 |
+| `src/grid_path_searcher_2d/src/grid_map_2d.cpp` | 实现坐标转换、占据判断、路径回溯与碰撞检测。 |
+| `src/grid_path_searcher_2d/src/grid_search_astar.cpp` | 实现 Dijkstra、A* 与 TimeBreak A*。 |
+| `src/grid_path_searcher_2d/src/grid_search_jps.cpp` | 实现 JPS 邻居判断、跳跃和搜索主循环。 |
+| `src/grid_path_searcher_2d/src/grid_search_prm.cpp` | 实现 PRM 采样、路线图构建和图上搜索。 |
+| `src/grid_path_searcher_2d/src/grid_search_rrt.cpp` | 实现基础 RRT。 |
+| `src/grid_path_searcher_2d/src/grid_search_rrt_star.cpp` | 实现 RRT*。 |
+| `src/grid_path_searcher_2d/src/grid_search_anytime_rrt_star.cpp` | 实现 Anytime RRT*。 |
+| `src/grid_path_searcher_2d/src/grid_search_informed_rrt_star.cpp` | 实现 Informed RRT*。 |
+| `src/grid_path_searcher_2d/src/grid_search_kinodynamic_rrt_star.cpp` | 实现 Kinodynamic RRT*。 |
+| `src/grid_path_searcher_2d/src/random_map_node.cpp` | 生成带随机障碍和保底通道的二维 OccupancyGrid。 |
+| `src/grid_path_searcher_2d/src/demo_node.cpp` | 接收地图和目标点，运行算法并发布路径与搜索结果。 |
+| `src/grid_path_searcher_2d/src/rrt_star_panel.cpp` | 提供 RViz2 实时参数面板。 |
+| `src/grid_path_searcher_2d/launch/demo_launch.py` | 启动二维地图、规划节点、目标点节点与 RViz2。 |
+| `src/grid_path_searcher_2d/config/demo_2d.rviz` | 配置地图、搜索区域和各算法路径的显示效果。 |
 
-### grid_path_searcher_2d
+推荐按“公共地图工具 → A*/Dijkstra → JPS → PRM → RRT 系列 → 演示节点”的顺序阅读源码。
 
-| 文件 | 功能 |
-|---|---|
-| `include/grid_path_searcher_2d/grid_searcher_2d.hpp` | 声明二维索引、搜索结果与搜索器接口。 |
-| `src/grid_map_2d.cpp` | 地图、坐标、路径回溯与直线碰撞检测公共工具。 |
-| `src/grid_search_astar.cpp` | Dijkstra、A* 与 TimeBreak A*。 |
-| `src/grid_search_jps.cpp` | JPS 强迫邻居、跳跃和搜索主循环。 |
-| `src/grid_search_prm.cpp` | PRM 随机采样、路线图与图上 Dijkstra。 |
-| `src/grid_search_rrt.cpp` | RRT 随机树扩展。 |
-| `src/grid_search_rrt_star.cpp` | RRT* 择父、重连与路径优化。 |
-| `src/random_map_node.cpp` | 生成带随机障碍和保底通道的二维 OccupancyGrid。 |
-| `src/demo_node.cpp` | 接入地图和航点并发布访问节点与两类路径。 |
-| `launch/demo_launch.py` | 启动二维完整演示。 |
-| `config/demo_2d.rviz` | 二维地图、访问区域和路径显示配置。 |
-
-### rviz_plugins
-
-| 文件 | 功能 |
-|---|---|
-| `include/pose_tool.hpp` | 声明 RViz 鼠标三维姿态交互基类。 |
-| `src/pose_tool.cpp` | 实现位置、朝向和高度三个鼠标交互阶段。 |
-| `include/goal_tool.hpp` | 声明发布 ROS 2 目标点的 Goal3DTool。 |
-| `src/goal_tool.cpp` | 把交互结果封装成 `PoseStamped` 并发布 `/goal`。 |
-| `plugin_description.xml` | 把 Goal3DTool 注册给 RViz2 的 pluginlib。 |
-| `config/tutorial_3d.rviz` | 三维点云、JPS/A* 路径和搜索节点显示配置。 |
-| `config/ros2_demo.rviz` | 二维地图和全局路径显示配置。 |
-
-`.vscode/` 保存 IntelliSense、编译数据库和任务配置。VS Code 的工作区 JSON 文件支持 JSON with Comments，因此文件头使用 `//` 注释介绍用途与内容，不影响 VS Code 解析。
-
-## 默认三维演示的完整运行逻辑
+## 运行逻辑
 
 ```text
-random_complex
-  │ 生成柱体/圆环点云
-  ▼
-/random_complex/global_map (PointCloud2)
-  │
-  ▼
-demo_node ── 建立三维占据栅格 ── JPS + A*
-  │                              │
-  │                              ├─ /demo_node/grid_path_vis
-  │                              ├─ /demo_node/closed_nodes_vis
-  │                              └─ /demo_node/debug_nodes_vis
-  └─ /demo_node/grid_map_vis
+random_map_node
+  └─ 随机二维 OccupancyGrid
+       └─ demo_node
+            ├─ Dijkstra / A* / TimeBreak A*
+            ├─ JPS / PRM
+            ├─ RRT / RRT*
+            ├─ Anytime RRT* / Informed RRT*
+            └─ Kinodynamic RRT*
+                 └─ 路径、搜索范围、耗时结果 ──> RViz2
 
-RViz Goal3DTool
-  │ 发布 PoseStamped
-  ▼
-/goal
-  ▼
-waypoint_generator
-  │ 转成 nav_msgs/Path
-  ▼
-/waypoint_generator/waypoints
-  ▼
-demo_node 重新规划
+RViz2 目标点
+  └─ waypoint_generator
+       └─ demo_node 重新规划
 ```
 
-具体步骤如下：
+演示默认从 `(-8, -8)` 规划到 `(8, 8)`。设置新目标后，所有算法会在相同地图和起终点条件下重新运行，方便观察路径形态、搜索范围和耗时差异。
 
-1. `demo_launch.py` 启动 `random_complex`、`demo_node`、`waypoint_generator` 和 RViz2。
-2. `random_complex` 使用固定随机种子生成可重复的三维障碍点云，并以 Transient Local QoS 发布。
-3. `demo_node` 收到第一帧点云后，把每个 XYZ 点写入三维占据数组；如果设置了 margin，还会对障碍进行膨胀。
-4. `demo_node` 默认以 `(0,0,1)` 为起点，以 `(7,7,1)` 为目标先运行 JPS、再运行普通 A*。
-5. 两种算法都使用 `f=g+h`：`g` 是累计路径代价，`h` 是三维对角距离启发项；JPS 通过自然邻居、强迫邻居和递归跳跃减少扩展节点。
-6. 搜索成功后沿每个节点的 `cameFrom` 指针从目标回溯到起点，再翻转成正向路径。
-7. 地图、路径和扩展节点转换为 PointCloud2/Marker，由 RViz2 以不同颜色显示。
-8. 用户使用 Goal3DTool 点击新位置时，插件发布 `/goal`；`waypoint_generator` 将其封装为 Path；`demo_node` 收到后清理上一轮状态并重新运行 JPS 与 A*。
-
-## 二维兼容模式的运行逻辑
-
-```text
-rosbag2 或外部地图节点
-  └─ /grid_map_global (OccupancyGrid)
-       └─ occupancy_demo_node
-
-/laser_localization (Odometry) ─┐
-/waypoint_generator/waypoints ──┼─> 八邻域 A* ─> /global_path
-                                └──────────────> /demo_node/grid_path_vis
-```
-
-二维规划器将世界坐标变换到地图局部栅格坐标，使用直移代价 10、斜移代价 14 的八邻域 A*，最后把栅格中心重新转换到世界坐标并发布路径。
-
-## 编译
+## 编译与启动
 
 ```bash
-cd /home/jon/ws11
+cd ~/ws11
 source /opt/ros/humble/setup.bash
 colcon build --symlink-install --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 source install/setup.bash
+ros2 launch grid_path_searcher_2d demo_launch.py
 ```
 
-## 启动
+RViz2 打开后可按 `G` 使用目标点工具；二维规划只读取目标的 X、Y 坐标。
 
-三维教程演示：
+## 可复现实验
+
+默认随机地图可以改用固定种子，便于在相同障碍环境下重复对比：
 
 ```bash
-ros2 launch grid_path_searcher demo_launch.py
+ros2 launch grid_path_searcher_2d demo_launch.py map_seed:=11
 ```
 
-不自动打开 RViz2：
+使用 `map_seed:=-1` 时，每次启动都会生成新的随机地图。TimeBreak A* 默认时间预算为 2 ms；PRM 与 RRT 系列的采样数量、迭代次数、步长、目标偏置和随机种子可通过启动参数或 RViz2 面板调整。
 
-```bash
-ros2 launch grid_path_searcher demo_launch.py use_rviz:=false
-```
+## RViz2 参数面板
 
-二维教程数据演示：
-
-```bash
-ros2 launch grid_path_searcher demo_with_data_launch.py
-```
-
-## Goal3DTool 操作
-
-1. 左键按下确定 XY 位置。
-2. 保持左键拖动确定偏航角。
-3. 保持左键的同时按住右键并上下拖动调整高度。
-4. 松开左键发布 `/goal`。
-
-三维演示使用 `world` 固定坐标系。
-
-## VS Code
-
-- `Ctrl+Shift+B`：编译整个工作空间。
-- `Terminal → Run Task → ROS 2: launch 3D demo`：启动三维演示。
-- IntelliSense 仍显示旧缓存时执行 `Ctrl+Shift+P → Developer: Reload Window`。
+参数面板支持在运行时调整规划参数并重新执行算法，适合观察参数变化对成功率、路径质量、访问节点数量和运行耗时的影响。终端与 RViz2 会同步展示各算法结果，便于横向比较。
