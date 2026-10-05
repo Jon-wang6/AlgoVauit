@@ -1,0 +1,8 @@
+source;share/grid_path_searcher/hook/cmake_prefix_path.ps1
+source;share/grid_path_searcher/hook/cmake_prefix_path.dsv
+source;share/grid_path_searcher/hook/cmake_prefix_path.sh
+source;share/grid_path_searcher/local_setup.bash
+source;share/grid_path_searcher/local_setup.dsv
+source;share/grid_path_searcher/local_setup.ps1
+source;share/grid_path_searcher/local_setup.sh
+source;share/grid_path_searcher/local_setup.zsh
