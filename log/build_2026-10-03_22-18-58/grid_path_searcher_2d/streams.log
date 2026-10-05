@@ -1,0 +1,62 @@
+[0.006s] Invoking command in '/home/jon/ws11/build/grid_path_searcher_2d': CMAKE_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble /usr/bin/cmake /home/jon/ws11/src/grid_path_searcher_2d -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jon/ws11/install/grid_path_searcher_2d
+[0.012s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.083s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.088s] -- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.102s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.102s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.105s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.109s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.114s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.129s] -- Found nav_msgs: 4.9.2 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.137s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[0.147s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.147s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.195s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.212s] -- Found tf2: 0.25.23 (/opt/ros/humble/share/tf2/cmake)
+[0.214s] -- Found tf2_geometry_msgs: 0.25.23 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.215s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.215s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.248s] -- Found visualization_msgs: 4.9.2 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.308s] -- Configuring done
+[0.320s] -- Generating done
+[0.325s] -- Build files have been written to: /home/jon/ws11/build/grid_path_searcher_2d
+[0.330s] Invoked command in '/home/jon/ws11/build/grid_path_searcher_2d' returned '0': CMAKE_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble /usr/bin/cmake /home/jon/ws11/src/grid_path_searcher_2d -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jon/ws11/install/grid_path_searcher_2d
+[0.330s] Invoking command in '/home/jon/ws11/build/grid_path_searcher_2d': CMAKE_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble /usr/bin/cmake --build /home/jon/ws11/build/grid_path_searcher_2d -- -j24 -l24
+[0.373s] [ 16%] Building CXX object CMakeFiles/grid_searcher_2d.dir/src/grid_searcher_2d.cpp.o
+[0.375s] [ 33%] Building CXX object CMakeFiles/random_map_2d.dir/src/random_map_node.cpp.o
+[1.963s] [ 50%] Linking CXX static library libgrid_searcher_2d.a
+[1.992s] [ 50%] Built target grid_searcher_2d
+[2.008s] [ 66%] Building CXX object CMakeFiles/demo_node_2d.dir/src/demo_node.cpp.o
+[2.530s] [ 83%] Linking CXX executable random_map_2d
+[2.636s] [ 83%] Built target random_map_2d
+[7.770s] [100%] Linking CXX executable demo_node_2d
+[8.087s] [100%] Built target demo_node_2d
+[8.094s] Invoked command in '/home/jon/ws11/build/grid_path_searcher_2d' returned '0': CMAKE_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble /usr/bin/cmake --build /home/jon/ws11/build/grid_path_searcher_2d -- -j24 -l24
+[8.095s] Invoking command in '/home/jon/ws11/build/grid_path_searcher_2d': CMAKE_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble /usr/bin/cmake --install /home/jon/ws11/build/grid_path_searcher_2d
+[8.100s] -- Install configuration: ""
+[8.100s] -- Execute custom install script
+[8.100s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/lib/libgrid_searcher_2d.a
+[8.107s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/lib/grid_path_searcher_2d/demo_node_2d
+[8.115s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/lib/grid_path_searcher_2d/random_map_2d
+[8.122s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/include/grid_path_searcher_2d/grid_searcher_2d.hpp
+[8.128s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/launch/__pycache__/demo_launch.cpython-310.pyc
+[8.133s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/launch/demo_launch.py
+[8.139s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/config/demo_2d.rviz
+[8.144s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/ament_index/resource_index/package_run_dependencies/grid_path_searcher_2d
+[8.152s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/ament_index/resource_index/parent_prefix_path/grid_path_searcher_2d
+[8.156s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/environment/ament_prefix_path.sh
+[8.160s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/environment/ament_prefix_path.dsv
+[8.166s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/environment/path.sh
+[8.172s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/environment/path.dsv
+[8.177s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/local_setup.bash
+[8.182s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/local_setup.sh
+[8.188s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/local_setup.zsh
+[8.194s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/local_setup.dsv
+[8.199s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/package.dsv
+[8.205s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/ament_index/resource_index/packages/grid_path_searcher_2d
+[8.209s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.215s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.221s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/cmake/grid_path_searcher_2dConfig.cmake
+[8.226s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/cmake/grid_path_searcher_2dConfig-version.cmake
+[8.231s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/package.xml
+[8.242s] Invoked command in '/home/jon/ws11/build/grid_path_searcher_2d' returned '0': CMAKE_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble /usr/bin/cmake --install /home/jon/ws11/build/grid_path_searcher_2d

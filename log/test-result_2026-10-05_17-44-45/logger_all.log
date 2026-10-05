@@ -1,0 +1,4 @@
+[0.040s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'test-result', '--verbose']
+[0.040s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='test-result', test_result_base='build', all=False, result_files_only=False, verbose=True, delete=False, delete_yes=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x77ecb0e5b340>, verb_extension=<colcon_test_result.verb.test_result.TestResultVerb object at 0x77ecb0e59f30>, main=<bound method TestResultVerb.main of <colcon_test_result.verb.test_result.TestResultVerb object at 0x77ecb0e59f30>>, mixin_verb=('test-result',))
+[0.043s] Level 1:colcon.colcon_test_result.test_result:get_test_results(ctest)
+[0.045s] Level 1:colcon.colcon_test_result.test_result:get_test_results(xunit)

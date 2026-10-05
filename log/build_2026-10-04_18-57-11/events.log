@@ -1,0 +1,134 @@
+[0.000000] (-) TimerEvent: {}
+[0.000111] (-) JobUnselected: {'identifier': 'grid_path_searcher'}
+[0.000230] (-) JobUnselected: {'identifier': 'rviz_plugins'}
+[0.000242] (-) JobUnselected: {'identifier': 'waypoint_generator'}
+[0.000255] (grid_path_searcher_2d) JobQueued: {'identifier': 'grid_path_searcher_2d', 'dependencies': OrderedDict([('rviz_plugins', '/home/jon/ws11/install/rviz_plugins'), ('waypoint_generator', '/home/jon/ws11/install/waypoint_generator')])}
+[0.000878] (grid_path_searcher_2d) JobStarted: {'identifier': 'grid_path_searcher_2d'}
+[0.007164] (grid_path_searcher_2d) JobProgress: {'identifier': 'grid_path_searcher_2d', 'progress': 'cmake'}
+[0.007438] (grid_path_searcher_2d) JobProgress: {'identifier': 'grid_path_searcher_2d', 'progress': 'build'}
+[0.007778] (grid_path_searcher_2d) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jon/ws11/build/grid_path_searcher_2d', '--', '-j24', '-l24'], 'cwd': '/home/jon/ws11/build/grid_path_searcher_2d', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE', '1'), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'jon'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'Codex Desktop'), ('CODEX_SHELL', '1'), ('all_proxy', 'socks5h://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'x11'), ('LOG_FORMAT', 'json'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jon/ws11/install/rviz_plugins/lib:/home/jon/ws01/install/turtlesim/lib:/home/jon/ws01/install/base_demo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jon'), ('CHROME_DESKTOP', 'chatgpt.desktop'), ('DISABLE_AUTO_UPDATE', 'true'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/jon/.local/share/applications/codex-proxy.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('MANAGERPID', '1381'), ('CODEX_APP_TOOLS_PIPE_PATH', '/tmp/codex-browser-use/a59f7969-4ebe-469d-a774-c1f2b5d607b9.sock'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '1991'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('CODEX_MCP_NODE_PATH', '/usr/lib/chatgpt/resources/cua_node/bin/node'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4326'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/jon/ws11/install:/home/jon/ws02/install:/home/jon/ws01/install'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('ZSH_TMUX_AUTOSTARTED', 'true'), ('LOGNAME', 'jon'), ('ALL_PROXY', 'socks5h://127.0.0.1:7890'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:13438'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'jon'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/jon/.local/bin:/home/jon/.codex/tmp/arg0/codex-arg0B1Bcpv:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/home/jon/.local/bin:/opt/ros/humble/bin:/home/jon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/usr/lib/chatgpt/resources'), ('SESSION_MANAGER', 'local/WJ:@/tmp/.ICE-unix/1959,unix/WJ:/tmp/.ICE-unix/1959'), ('CODEX_VERSION', '0.155.0-alpha.9'), ('CODEX_SESSION_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('INVOCATION_ID', '467be023431641d890b0289e99b44a99'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jon/ws11/install/grid_path_searcher_2d:/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/jon/ws11/build/grid_path_searcher_2d'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('ZSH_TMUX_AUTOSTART', 'false'), ('CLUTTER_IM_MODULE', 'fcitx'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jon/ws01/install/turtlesim/local/lib/python3.10/dist-packages:/home/jon/ws01/install/base_demo/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws11/install/grid_path_searcher_2d:/home/jon/ws11/install/grid_path_searcher:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble')]), 'shell': False}
+[0.042234] (grid_path_searcher_2d) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target grid_searcher_2d\n'}
+[0.047112] (grid_path_searcher_2d) StdoutLine: {'line': b'[ 33%] Built target random_map_2d\n'}
+[0.053653] (grid_path_searcher_2d) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/grid_searcher_2d.dir/src/grid_searcher_2d.cpp.o\n'}
+[0.099623] (-) TimerEvent: {}
+[0.199820] (-) TimerEvent: {}
+[0.300081] (-) TimerEvent: {}
+[0.400301] (-) TimerEvent: {}
+[0.500854] (-) TimerEvent: {}
+[0.601031] (-) TimerEvent: {}
+[0.701253] (-) TimerEvent: {}
+[0.801475] (-) TimerEvent: {}
+[0.902451] (-) TimerEvent: {}
+[1.002650] (-) TimerEvent: {}
+[1.102861] (-) TimerEvent: {}
+[1.203403] (-) TimerEvent: {}
+[1.303594] (-) TimerEvent: {}
+[1.403947] (-) TimerEvent: {}
+[1.504150] (-) TimerEvent: {}
+[1.604348] (-) TimerEvent: {}
+[1.704538] (-) TimerEvent: {}
+[1.804686] (-) TimerEvent: {}
+[1.840865] (grid_path_searcher_2d) StdoutLine: {'line': b'[ 66%] Linking CXX static library libgrid_searcher_2d.a\n'}
+[1.867363] (grid_path_searcher_2d) StdoutLine: {'line': b'[ 66%] Built target grid_searcher_2d\n'}
+[1.877384] (grid_path_searcher_2d) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target demo_node_2d\n'}
+[1.891166] (grid_path_searcher_2d) StdoutLine: {'line': b'[ 83%] Building CXX object CMakeFiles/demo_node_2d.dir/src/demo_node.cpp.o\n'}
+[1.904791] (-) TimerEvent: {}
+[2.004972] (-) TimerEvent: {}
+[2.106834] (-) TimerEvent: {}
+[2.207020] (-) TimerEvent: {}
+[2.307200] (-) TimerEvent: {}
+[2.407389] (-) TimerEvent: {}
+[2.508016] (-) TimerEvent: {}
+[2.608188] (-) TimerEvent: {}
+[2.708375] (-) TimerEvent: {}
+[2.808612] (-) TimerEvent: {}
+[2.909254] (-) TimerEvent: {}
+[3.009451] (-) TimerEvent: {}
+[3.109657] (-) TimerEvent: {}
+[3.209869] (-) TimerEvent: {}
+[3.310402] (-) TimerEvent: {}
+[3.411843] (-) TimerEvent: {}
+[3.512028] (-) TimerEvent: {}
+[3.612288] (-) TimerEvent: {}
+[3.712503] (-) TimerEvent: {}
+[3.812696] (-) TimerEvent: {}
+[3.912918] (-) TimerEvent: {}
+[4.013116] (-) TimerEvent: {}
+[4.113310] (-) TimerEvent: {}
+[4.213794] (-) TimerEvent: {}
+[4.314004] (-) TimerEvent: {}
+[4.414493] (-) TimerEvent: {}
+[4.514690] (-) TimerEvent: {}
+[4.614899] (-) TimerEvent: {}
+[4.715132] (-) TimerEvent: {}
+[4.815336] (-) TimerEvent: {}
+[4.917679] (-) TimerEvent: {}
+[5.017870] (-) TimerEvent: {}
+[5.118065] (-) TimerEvent: {}
+[5.218428] (-) TimerEvent: {}
+[5.318637] (-) TimerEvent: {}
+[5.418788] (-) TimerEvent: {}
+[5.518960] (-) TimerEvent: {}
+[5.619154] (-) TimerEvent: {}
+[5.720150] (-) TimerEvent: {}
+[5.821828] (-) TimerEvent: {}
+[5.922043] (-) TimerEvent: {}
+[6.022490] (-) TimerEvent: {}
+[6.122688] (-) TimerEvent: {}
+[6.222883] (-) TimerEvent: {}
+[6.323078] (-) TimerEvent: {}
+[6.423295] (-) TimerEvent: {}
+[6.523519] (-) TimerEvent: {}
+[6.623797] (-) TimerEvent: {}
+[6.724049] (-) TimerEvent: {}
+[6.824321] (-) TimerEvent: {}
+[6.924539] (-) TimerEvent: {}
+[7.024727] (-) TimerEvent: {}
+[7.125570] (-) TimerEvent: {}
+[7.225766] (-) TimerEvent: {}
+[7.326601] (-) TimerEvent: {}
+[7.426838] (-) TimerEvent: {}
+[7.527013] (-) TimerEvent: {}
+[7.627195] (-) TimerEvent: {}
+[7.727377] (-) TimerEvent: {}
+[7.827588] (-) TimerEvent: {}
+[7.929816] (-) TimerEvent: {}
+[8.030040] (-) TimerEvent: {}
+[8.130261] (-) TimerEvent: {}
+[8.168989] (grid_path_searcher_2d) StdoutLine: {'line': b'[100%] Linking CXX executable demo_node_2d\n'}
+[8.230371] (-) TimerEvent: {}
+[8.331785] (-) TimerEvent: {}
+[8.431979] (-) TimerEvent: {}
+[8.523796] (grid_path_searcher_2d) StdoutLine: {'line': b'[100%] Built target demo_node_2d\n'}
+[8.533870] (-) TimerEvent: {}
+[8.537741] (grid_path_searcher_2d) CommandEnded: {'returncode': 0}
+[8.538075] (grid_path_searcher_2d) JobProgress: {'identifier': 'grid_path_searcher_2d', 'progress': 'install'}
+[8.544507] (grid_path_searcher_2d) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jon/ws11/build/grid_path_searcher_2d'], 'cwd': '/home/jon/ws11/build/grid_path_searcher_2d', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE', '1'), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'jon'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'Codex Desktop'), ('CODEX_SHELL', '1'), ('all_proxy', 'socks5h://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'x11'), ('LOG_FORMAT', 'json'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jon/ws11/install/rviz_plugins/lib:/home/jon/ws01/install/turtlesim/lib:/home/jon/ws01/install/base_demo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jon'), ('CHROME_DESKTOP', 'chatgpt.desktop'), ('DISABLE_AUTO_UPDATE', 'true'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/jon/.local/share/applications/codex-proxy.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('MANAGERPID', '1381'), ('CODEX_APP_TOOLS_PIPE_PATH', '/tmp/codex-browser-use/a59f7969-4ebe-469d-a774-c1f2b5d607b9.sock'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '1991'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('CODEX_MCP_NODE_PATH', '/usr/lib/chatgpt/resources/cua_node/bin/node'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4326'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/jon/ws11/install:/home/jon/ws02/install:/home/jon/ws01/install'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('ZSH_TMUX_AUTOSTARTED', 'true'), ('LOGNAME', 'jon'), ('ALL_PROXY', 'socks5h://127.0.0.1:7890'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:13438'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'jon'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/jon/.local/bin:/home/jon/.codex/tmp/arg0/codex-arg0B1Bcpv:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/home/jon/.local/bin:/opt/ros/humble/bin:/home/jon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/usr/lib/chatgpt/resources'), ('SESSION_MANAGER', 'local/WJ:@/tmp/.ICE-unix/1959,unix/WJ:/tmp/.ICE-unix/1959'), ('CODEX_VERSION', '0.155.0-alpha.9'), ('CODEX_SESSION_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('INVOCATION_ID', '467be023431641d890b0289e99b44a99'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jon/ws11/install/grid_path_searcher_2d:/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/jon/ws11/build/grid_path_searcher_2d'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('ZSH_TMUX_AUTOSTART', 'false'), ('CLUTTER_IM_MODULE', 'fcitx'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jon/ws01/install/turtlesim/local/lib/python3.10/dist-packages:/home/jon/ws01/install/base_demo/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws11/install/grid_path_searcher_2d:/home/jon/ws11/install/grid_path_searcher:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble')]), 'shell': False}
+[8.549350] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.549479] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[8.549767] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/lib/libgrid_searcher_2d.a\n'}
+[8.549810] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/lib/grid_path_searcher_2d/demo_node_2d\n'}
+[8.549864] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/lib/grid_path_searcher_2d/random_map_2d\n'}
+[8.549890] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/include/grid_path_searcher_2d/grid_searcher_2d.hpp\n'}
+[8.549913] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/launch/demo_launch.py\n'}
+[8.549934] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/config/demo_2d.rviz\n'}
+[8.549954] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/ament_index/resource_index/package_run_dependencies/grid_path_searcher_2d\n'}
+[8.549974] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/ament_index/resource_index/parent_prefix_path/grid_path_searcher_2d\n'}
+[8.549995] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/environment/ament_prefix_path.sh\n'}
+[8.550116] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/environment/ament_prefix_path.dsv\n'}
+[8.550139] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/environment/path.sh\n'}
+[8.550159] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/environment/path.dsv\n'}
+[8.550179] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/local_setup.bash\n'}
+[8.550267] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/local_setup.sh\n'}
+[8.550305] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/local_setup.zsh\n'}
+[8.550325] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/local_setup.dsv\n'}
+[8.550344] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Symlinking: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/package.dsv\n'}
+[8.557027] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/ament_index/resource_index/packages/grid_path_searcher_2d\n'}
+[8.557125] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.557153] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.557175] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/cmake/grid_path_searcher_2dConfig.cmake\n'}
+[8.557196] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/cmake/grid_path_searcher_2dConfig-version.cmake\n'}
+[8.557216] (grid_path_searcher_2d) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher_2d/share/grid_path_searcher_2d/package.xml\n'}
+[8.558306] (grid_path_searcher_2d) CommandEnded: {'returncode': 0}
+[8.569472] (grid_path_searcher_2d) JobEnded: {'identifier': 'grid_path_searcher_2d', 'rc': 0}
+[8.569830] (-) EventReactorShutdown: {}

@@ -1,0 +1,6 @@
+/home/jon/ws11/src/rviz_plugins/src/pose_tool_impl.hpp:1:9: warning: #pragma once in main file
+    1 | #pragma once
+      |         ^~~~
+/home/jon/ws11/src/rviz_plugins/src/goal_tool_impl.hpp:1:9: warning: #pragma once in main file
+    1 | #pragma once
+      |         ^~~~

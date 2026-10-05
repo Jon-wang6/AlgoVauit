@@ -1,0 +1,3 @@
+/home/jon/ws11/src/waypoint_generator/src/waypoint_generator.hpp:1:9: warning: #pragma once in main file
+    1 | #pragma once
+      |         ^~~~

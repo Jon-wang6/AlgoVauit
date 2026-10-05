@@ -1,0 +1,11 @@
+/home/jon/ws11/src/rviz_plugins/src/goal_tool_impl.hpp:1:9: warning: #pragma once in main file
+    1 | #pragma once
+      |         ^~~~
+/home/jon/ws11/src/rviz_plugins/src/pose_tool_impl.hpp:1:9: warning: #pragma once in main file
+    1 | #pragma once
+      |         ^~~~
+CMakeFiles/rviz_plugins.dir/src/pose_tool_impl.hpp.o: file not recognized: file format not recognized
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/rviz_plugins.dir/build.make:272：librviz_plugins.so] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:138：CMakeFiles/rviz_plugins.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

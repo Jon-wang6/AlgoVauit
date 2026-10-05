@@ -1,0 +1,174 @@
+[0.000000] (-) TimerEvent: {}
+[0.000551] (rviz_plugins) JobQueued: {'identifier': 'rviz_plugins', 'dependencies': OrderedDict()}
+[0.000685] (waypoint_generator) JobQueued: {'identifier': 'waypoint_generator', 'dependencies': OrderedDict()}
+[0.000695] (grid_path_searcher) JobQueued: {'identifier': 'grid_path_searcher', 'dependencies': OrderedDict([('rviz_plugins', '/home/jon/ws11/install/rviz_plugins'), ('waypoint_generator', '/home/jon/ws11/install/waypoint_generator')])}
+[0.000757] (rviz_plugins) JobStarted: {'identifier': 'rviz_plugins'}
+[0.004089] (waypoint_generator) JobStarted: {'identifier': 'waypoint_generator'}
+[0.007208] (rviz_plugins) JobProgress: {'identifier': 'rviz_plugins', 'progress': 'cmake'}
+[0.009336] (rviz_plugins) JobProgress: {'identifier': 'rviz_plugins', 'progress': 'build'}
+[0.009405] (rviz_plugins) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jon/ws11/build/rviz_plugins', '--', '-j24', '-l24'], 'cwd': '/home/jon/ws11/build/rviz_plugins', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE', '1'), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'jon'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'Codex Desktop'), ('CODEX_SHELL', '1'), ('all_proxy', 'socks5h://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'x11'), ('LOG_FORMAT', 'json'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jon/ws11/install/rviz_plugins/lib:/home/jon/ws01/install/turtlesim/lib:/home/jon/ws01/install/base_demo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jon'), ('CHROME_DESKTOP', 'chatgpt.desktop'), ('DISABLE_AUTO_UPDATE', 'true'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/jon/.local/share/applications/codex-proxy.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('MANAGERPID', '1322'), ('CODEX_APP_TOOLS_PIPE_PATH', '/tmp/codex-browser-use/a95ec837-1177-4bc5-802e-9efe251f7322.sock'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '1889'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('CODEX_MCP_NODE_PATH', '/usr/lib/chatgpt/resources/cua_node/bin/node'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7076'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/jon/ws11/install:/home/jon/ws02/install:/home/jon/ws01/install'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('ZSH_TMUX_AUTOSTARTED', 'true'), ('LOGNAME', 'jon'), ('ALL_PROXY', 'socks5h://127.0.0.1:7890'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:17510'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'jon'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/jon/.local/bin:/home/jon/.codex/tmp/arg0/codex-arg0vo0q0P:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/home/jon/.local/bin:/opt/ros/humble/bin:/home/jon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/usr/lib/chatgpt/resources'), ('SESSION_MANAGER', 'local/WJ:@/tmp/.ICE-unix/1861,unix/WJ:/tmp/.ICE-unix/1861'), ('CODEX_VERSION', '0.155.0-alpha.9'), ('CODEX_SESSION_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('INVOCATION_ID', '609fee656b7440ac87c092eea7ed7ff3'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/jon/ws11/build/rviz_plugins'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('ZSH_TMUX_AUTOSTART', 'false'), ('CLUTTER_IM_MODULE', 'fcitx'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jon/ws01/install/turtlesim/local/lib/python3.10/dist-packages:/home/jon/ws01/install/base_demo/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble')]), 'shell': False}
+[0.011640] (waypoint_generator) JobProgress: {'identifier': 'waypoint_generator', 'progress': 'cmake'}
+[0.011764] (waypoint_generator) JobProgress: {'identifier': 'waypoint_generator', 'progress': 'build'}
+[0.011893] (waypoint_generator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jon/ws11/build/waypoint_generator', '--', '-j24', '-l24'], 'cwd': '/home/jon/ws11/build/waypoint_generator', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE', '1'), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'jon'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'Codex Desktop'), ('CODEX_SHELL', '1'), ('all_proxy', 'socks5h://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'x11'), ('LOG_FORMAT', 'json'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jon/ws11/install/rviz_plugins/lib:/home/jon/ws01/install/turtlesim/lib:/home/jon/ws01/install/base_demo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jon'), ('CHROME_DESKTOP', 'chatgpt.desktop'), ('DISABLE_AUTO_UPDATE', 'true'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/jon/.local/share/applications/codex-proxy.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('MANAGERPID', '1322'), ('CODEX_APP_TOOLS_PIPE_PATH', '/tmp/codex-browser-use/a95ec837-1177-4bc5-802e-9efe251f7322.sock'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '1889'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('CODEX_MCP_NODE_PATH', '/usr/lib/chatgpt/resources/cua_node/bin/node'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7076'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/jon/ws11/install:/home/jon/ws02/install:/home/jon/ws01/install'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('ZSH_TMUX_AUTOSTARTED', 'true'), ('LOGNAME', 'jon'), ('ALL_PROXY', 'socks5h://127.0.0.1:7890'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:17510'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'jon'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/jon/.local/bin:/home/jon/.codex/tmp/arg0/codex-arg0vo0q0P:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/home/jon/.local/bin:/opt/ros/humble/bin:/home/jon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/usr/lib/chatgpt/resources'), ('SESSION_MANAGER', 'local/WJ:@/tmp/.ICE-unix/1861,unix/WJ:/tmp/.ICE-unix/1861'), ('CODEX_VERSION', '0.155.0-alpha.9'), ('CODEX_SESSION_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('INVOCATION_ID', '609fee656b7440ac87c092eea7ed7ff3'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/jon/ws11/build/waypoint_generator'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('ZSH_TMUX_AUTOSTART', 'false'), ('CLUTTER_IM_MODULE', 'fcitx'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jon/ws01/install/turtlesim/local/lib/python3.10/dist-packages:/home/jon/ws01/install/base_demo/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble')]), 'shell': False}
+[0.024563] (rviz_plugins) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.030307] (waypoint_generator) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.087398] (rviz_plugins) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.090963] (rviz_plugins) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.099565] (waypoint_generator) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.099849] (-) TimerEvent: {}
+[0.101201] (rviz_plugins) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.102138] (rviz_plugins) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.102349] (waypoint_generator) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.105010] (rviz_plugins) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.108862] (rviz_plugins) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.113329] (waypoint_generator) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.113844] (rviz_plugins) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.114299] (waypoint_generator) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.116892] (waypoint_generator) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.121041] (waypoint_generator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.126126] (waypoint_generator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.128916] (rviz_plugins) StdoutLine: {'line': b'-- Found pluginlib: 5.1.5 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[0.139108] (rviz_plugins) StdoutLine: {'line': b'-- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.141243] (waypoint_generator) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.2 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.147723] (waypoint_generator) StdoutLine: {'line': b'-- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.149763] (rviz_plugins) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.150422] (rviz_plugins) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.158403] (waypoint_generator) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.158591] (rviz_plugins) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.159182] (waypoint_generator) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.163421] (rviz_plugins) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.171795] (rviz_plugins) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.177809] (rviz_plugins) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.184427] (rviz_plugins) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.199956] (-) TimerEvent: {}
+[0.201703] (rviz_plugins) StdoutLine: {'line': b'-- Found rviz_common: 11.2.29 (/opt/ros/humble/share/rviz_common/cmake)\n'}
+[0.202955] (rviz_plugins) StdoutLine: {'line': b"-- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'\n"}
+[0.205010] (rviz_plugins) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[0.205193] (rviz_plugins) StdoutLine: {'line': b'-- Found OGRE\n'}
+[0.205268] (rviz_plugins) StdoutLine: {'line': b'--   static     : OFF\n'}
+[0.205292] (rviz_plugins) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[0.205329] (rviz_plugins) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[0.205348] (rviz_plugins) StdoutLine: {'line': b'--   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[0.205366] (rviz_plugins) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[0.205385] (rviz_plugins) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib\n'}
+[0.205402] (rviz_plugins) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[0.205422] (rviz_plugins) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[0.205520] (rviz_plugins) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[0.205546] (rviz_plugins) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[0.205602] (rviz_plugins) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[0.205624] (rviz_plugins) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[0.206409] (rviz_plugins) StdoutLine: {'line': b'-- Could not find freeimage library\n'}
+[0.208172] (waypoint_generator) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.225861] (waypoint_generator) StdoutLine: {'line': b'-- Found tf2: 0.25.23 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.226810] (waypoint_generator) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.23 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.228150] (waypoint_generator) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.228755] (waypoint_generator) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.240244] (rviz_plugins) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[0.253887] (rviz_plugins) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.299823] (waypoint_generator) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.300068] (-) TimerEvent: {}
+[0.304866] (waypoint_generator) StdoutLine: {'line': b'-- Generating done\n'}
+[0.306382] (waypoint_generator) StdoutLine: {'line': b'-- Build files have been written to: /home/jon/ws11/build/waypoint_generator\n'}
+[0.323555] (rviz_plugins) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.332331] (waypoint_generator) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/waypoint_generator.dir/src/waypoint_generator.hpp.o\n'}
+[0.338600] (rviz_plugins) StdoutLine: {'line': b'-- Generating done\n'}
+[0.339065] (waypoint_generator) StderrLine: {'line': b'/home/jon/ws11/src/waypoint_generator/src/waypoint_generator.hpp:1:9: warning: #pragma once in main file\n'}
+[0.339114] (waypoint_generator) StderrLine: {'line': b'    1 | #pragma once\n'}
+[0.339139] (waypoint_generator) StderrLine: {'line': b'      |         ^~~~\n'}
+[0.340953] (rviz_plugins) StdoutLine: {'line': b'-- Build files have been written to: /home/jon/ws11/build/rviz_plugins\n'}
+[0.370150] (rviz_plugins) StdoutLine: {'line': b'[ 20%] Automatic MOC for target rviz_plugins\n'}
+[0.385217] (rviz_plugins) StdoutLine: {'line': b'[ 20%] Built target rviz_plugins_autogen\n'}
+[0.396096] (rviz_plugins) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target rviz_plugins\n'}
+[0.400115] (-) TimerEvent: {}
+[0.404064] (rviz_plugins) StdoutLine: {'line': b'[ 60%] Building CXX object CMakeFiles/rviz_plugins.dir/src/goal_tool_impl.hpp.o\n'}
+[0.404162] (rviz_plugins) StdoutLine: {'line': b'[ 60%] Building CXX object CMakeFiles/rviz_plugins.dir/src/pose_tool_impl.hpp.o\n'}
+[0.409345] (rviz_plugins) StderrLine: {'line': b'/home/jon/ws11/src/rviz_plugins/src/goal_tool_impl.hpp:1:9: warning: #pragma once in main file\n'}
+[0.409428] (rviz_plugins) StderrLine: {'line': b'    1 | #pragma once\n'}
+[0.409454] (rviz_plugins) StderrLine: {'line': b'      |         ^~~~\n'}
+[0.410171] (rviz_plugins) StderrLine: {'line': b'/home/jon/ws11/src/rviz_plugins/src/pose_tool_impl.hpp:1:9: warning: #pragma once in main file\n'}
+[0.410195] (rviz_plugins) StderrLine: {'line': b'    1 | #pragma once\n'}
+[0.410214] (rviz_plugins) StderrLine: {'line': b'      |         ^~~~\n'}
+[0.500232] (-) TimerEvent: {}
+[0.600412] (-) TimerEvent: {}
+[0.700589] (-) TimerEvent: {}
+[0.800764] (-) TimerEvent: {}
+[0.900942] (-) TimerEvent: {}
+[1.001124] (-) TimerEvent: {}
+[1.101537] (-) TimerEvent: {}
+[1.201704] (-) TimerEvent: {}
+[1.301880] (-) TimerEvent: {}
+[1.402312] (-) TimerEvent: {}
+[1.502509] (-) TimerEvent: {}
+[1.603517] (-) TimerEvent: {}
+[1.703705] (-) TimerEvent: {}
+[1.804020] (-) TimerEvent: {}
+[1.904772] (-) TimerEvent: {}
+[2.004941] (-) TimerEvent: {}
+[2.105110] (-) TimerEvent: {}
+[2.205283] (-) TimerEvent: {}
+[2.305549] (-) TimerEvent: {}
+[2.405751] (-) TimerEvent: {}
+[2.505917] (-) TimerEvent: {}
+[2.606086] (-) TimerEvent: {}
+[2.706257] (-) TimerEvent: {}
+[2.806419] (-) TimerEvent: {}
+[2.906585] (-) TimerEvent: {}
+[3.006758] (-) TimerEvent: {}
+[3.106946] (-) TimerEvent: {}
+[3.207262] (-) TimerEvent: {}
+[3.307446] (-) TimerEvent: {}
+[3.407642] (-) TimerEvent: {}
+[3.507821] (-) TimerEvent: {}
+[3.608357] (-) TimerEvent: {}
+[3.708542] (-) TimerEvent: {}
+[3.808700] (-) TimerEvent: {}
+[3.908875] (-) TimerEvent: {}
+[4.009047] (-) TimerEvent: {}
+[4.109237] (-) TimerEvent: {}
+[4.209416] (-) TimerEvent: {}
+[4.309604] (-) TimerEvent: {}
+[4.409769] (-) TimerEvent: {}
+[4.510667] (-) TimerEvent: {}
+[4.610847] (-) TimerEvent: {}
+[4.711014] (-) TimerEvent: {}
+[4.811193] (-) TimerEvent: {}
+[4.911361] (-) TimerEvent: {}
+[5.011526] (-) TimerEvent: {}
+[5.111680] (-) TimerEvent: {}
+[5.212102] (-) TimerEvent: {}
+[5.312511] (-) TimerEvent: {}
+[5.412674] (-) TimerEvent: {}
+[5.513629] (-) TimerEvent: {}
+[5.613761] (-) TimerEvent: {}
+[5.714261] (-) TimerEvent: {}
+[5.814415] (-) TimerEvent: {}
+[5.914573] (-) TimerEvent: {}
+[6.014759] (-) TimerEvent: {}
+[6.115649] (-) TimerEvent: {}
+[6.215763] (-) TimerEvent: {}
+[6.316197] (-) TimerEvent: {}
+[6.416359] (-) TimerEvent: {}
+[6.517756] (-) TimerEvent: {}
+[6.579271] (waypoint_generator) StdoutLine: {'line': b'[100%] Linking CXX executable waypoint_generator\n'}
+[6.592517] (waypoint_generator) StderrLine: {'line': b'CMakeFiles/waypoint_generator.dir/src/waypoint_generator.hpp.o: file not recognized: file format not recognized\n'}
+[6.592660] (waypoint_generator) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[6.594378] (waypoint_generator) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/waypoint_generator.dir/build.make:205\xef\xbc\x9awaypoint_generator] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[6.594545] (waypoint_generator) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/waypoint_generator.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[6.594819] (waypoint_generator) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[6.599101] (waypoint_generator) CommandEnded: {'returncode': 2}
+[6.602536] (waypoint_generator) JobEnded: {'identifier': 'waypoint_generator', 'rc': 2}
+[6.616620] (-) TimerEvent: {}
+[6.716919] (-) TimerEvent: {}
+[6.817203] (-) TimerEvent: {}
+[6.917528] (-) TimerEvent: {}
+[7.017806] (-) TimerEvent: {}
+[7.118000] (-) TimerEvent: {}
+[7.147823] (rviz_plugins) StdoutLine: {'line': b'[ 80%] Linking CXX shared library librviz_plugins.so\n'}
+[7.161466] (rviz_plugins) StderrLine: {'line': b'CMakeFiles/rviz_plugins.dir/src/pose_tool_impl.hpp.o: file not recognized: file format not recognized\n'}
+[7.161638] (rviz_plugins) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[7.162535] (rviz_plugins) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/rviz_plugins.dir/build.make:272\xef\xbc\x9alibrviz_plugins.so] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[7.162691] (rviz_plugins) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:138\xef\xbc\x9aCMakeFiles/rviz_plugins.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[7.163020] (rviz_plugins) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[7.164271] (rviz_plugins) JobEnded: {'identifier': 'rviz_plugins', 'rc': 'SIGINT'}
+[7.174634] (grid_path_searcher) JobSkipped: {'identifier': 'grid_path_searcher'}
+[7.174652] (-) EventReactorShutdown: {}

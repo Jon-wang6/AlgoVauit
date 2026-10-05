@@ -1,0 +1,7 @@
+[0.015s] Invoking command in '/home/jon/ws11/build/rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jon/ws11/build/rviz_plugins -- -j24 -l24
+[0.063s] [ 20%] Automatic MOC for target rviz_plugins
+[0.084s] [ 20%] Built target rviz_plugins_autogen
+[0.097s] [ 40%] Building CXX object CMakeFiles/rviz_plugins.dir/src/pose_tool.cpp.o
+[0.112s] [ 60%] Building CXX object CMakeFiles/rviz_plugins.dir/src/goal_tool.cpp.o
+[2.835s] [ 80%] Linking CXX shared library librviz_plugins.so
+[3.257s] [100%] Built target rviz_plugins

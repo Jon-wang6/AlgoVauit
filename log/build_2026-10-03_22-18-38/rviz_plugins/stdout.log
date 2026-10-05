@@ -1,0 +1,6 @@
+[ 20%] Automatic MOC for target rviz_plugins
+[ 20%] Built target rviz_plugins_autogen
+[ 40%] Building CXX object CMakeFiles/rviz_plugins.dir/src/pose_tool.cpp.o
+[ 60%] Building CXX object CMakeFiles/rviz_plugins.dir/src/goal_tool.cpp.o
+[ 80%] Linking CXX shared library librviz_plugins.so
+[100%] Built target rviz_plugins

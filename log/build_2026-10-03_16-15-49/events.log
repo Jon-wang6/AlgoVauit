@@ -1,0 +1,356 @@
+[0.000000] (-) TimerEvent: {}
+[0.001386] (rviz_plugins) JobQueued: {'identifier': 'rviz_plugins', 'dependencies': OrderedDict()}
+[0.001497] (waypoint_generator) JobQueued: {'identifier': 'waypoint_generator', 'dependencies': OrderedDict()}
+[0.001508] (grid_path_searcher) JobQueued: {'identifier': 'grid_path_searcher', 'dependencies': OrderedDict([('rviz_plugins', '/home/jon/ws11/install/rviz_plugins'), ('waypoint_generator', '/home/jon/ws11/install/waypoint_generator')])}
+[0.001518] (rviz_plugins) JobStarted: {'identifier': 'rviz_plugins'}
+[0.004130] (waypoint_generator) JobStarted: {'identifier': 'waypoint_generator'}
+[0.006465] (rviz_plugins) JobProgress: {'identifier': 'rviz_plugins', 'progress': 'cmake'}
+[0.006775] (rviz_plugins) JobProgress: {'identifier': 'rviz_plugins', 'progress': 'build'}
+[0.007105] (rviz_plugins) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jon/ws11/build/rviz_plugins', '--', '-j24', '-l24'], 'cwd': '/home/jon/ws11/build/rviz_plugins', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE', '1'), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'jon'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'Codex Desktop'), ('CODEX_SHELL', '1'), ('all_proxy', 'socks5h://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'x11'), ('LOG_FORMAT', 'json'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jon/ws11/install/rviz_plugins/lib:/home/jon/ws01/install/turtlesim/lib:/home/jon/ws01/install/base_demo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jon'), ('CHROME_DESKTOP', 'chatgpt.desktop'), ('DISABLE_AUTO_UPDATE', 'true'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/jon/.local/share/applications/codex-proxy.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('MANAGERPID', '1322'), ('CODEX_APP_TOOLS_PIPE_PATH', '/tmp/codex-browser-use/a95ec837-1177-4bc5-802e-9efe251f7322.sock'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '1889'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('CODEX_MCP_NODE_PATH', '/usr/lib/chatgpt/resources/cua_node/bin/node'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7076'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/jon/ws11/install:/home/jon/ws02/install:/home/jon/ws01/install'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('ZSH_TMUX_AUTOSTARTED', 'true'), ('LOGNAME', 'jon'), ('ALL_PROXY', 'socks5h://127.0.0.1:7890'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:17510'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'jon'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/jon/.local/bin:/home/jon/.codex/tmp/arg0/codex-arg0vo0q0P:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/home/jon/.local/bin:/opt/ros/humble/bin:/home/jon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/usr/lib/chatgpt/resources'), ('SESSION_MANAGER', 'local/WJ:@/tmp/.ICE-unix/1861,unix/WJ:/tmp/.ICE-unix/1861'), ('CODEX_VERSION', '0.155.0-alpha.9'), ('CODEX_SESSION_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('INVOCATION_ID', '609fee656b7440ac87c092eea7ed7ff3'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/jon/ws11/build/rviz_plugins'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('ZSH_TMUX_AUTOSTART', 'false'), ('CLUTTER_IM_MODULE', 'fcitx'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jon/ws01/install/turtlesim/local/lib/python3.10/dist-packages:/home/jon/ws01/install/base_demo/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble')]), 'shell': False}
+[0.010134] (waypoint_generator) JobProgress: {'identifier': 'waypoint_generator', 'progress': 'cmake'}
+[0.010401] (waypoint_generator) JobProgress: {'identifier': 'waypoint_generator', 'progress': 'build'}
+[0.010527] (waypoint_generator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jon/ws11/build/waypoint_generator', '--', '-j24', '-l24'], 'cwd': '/home/jon/ws11/build/waypoint_generator', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE', '1'), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'jon'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'Codex Desktop'), ('CODEX_SHELL', '1'), ('all_proxy', 'socks5h://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'x11'), ('LOG_FORMAT', 'json'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jon/ws11/install/rviz_plugins/lib:/home/jon/ws01/install/turtlesim/lib:/home/jon/ws01/install/base_demo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jon'), ('CHROME_DESKTOP', 'chatgpt.desktop'), ('DISABLE_AUTO_UPDATE', 'true'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/jon/.local/share/applications/codex-proxy.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('MANAGERPID', '1322'), ('CODEX_APP_TOOLS_PIPE_PATH', '/tmp/codex-browser-use/a95ec837-1177-4bc5-802e-9efe251f7322.sock'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '1889'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('CODEX_MCP_NODE_PATH', '/usr/lib/chatgpt/resources/cua_node/bin/node'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7076'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/jon/ws11/install:/home/jon/ws02/install:/home/jon/ws01/install'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('ZSH_TMUX_AUTOSTARTED', 'true'), ('LOGNAME', 'jon'), ('ALL_PROXY', 'socks5h://127.0.0.1:7890'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:17510'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'jon'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/jon/.local/bin:/home/jon/.codex/tmp/arg0/codex-arg0vo0q0P:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/home/jon/.local/bin:/opt/ros/humble/bin:/home/jon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/usr/lib/chatgpt/resources'), ('SESSION_MANAGER', 'local/WJ:@/tmp/.ICE-unix/1861,unix/WJ:/tmp/.ICE-unix/1861'), ('CODEX_VERSION', '0.155.0-alpha.9'), ('CODEX_SESSION_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('INVOCATION_ID', '609fee656b7440ac87c092eea7ed7ff3'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/jon/ws11/build/waypoint_generator'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('ZSH_TMUX_AUTOSTART', 'false'), ('CLUTTER_IM_MODULE', 'fcitx'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jon/ws01/install/turtlesim/local/lib/python3.10/dist-packages:/home/jon/ws01/install/base_demo/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble')]), 'shell': False}
+[0.025309] (rviz_plugins) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.025490] (waypoint_generator) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.088770] (waypoint_generator) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.088996] (rviz_plugins) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.093871] (waypoint_generator) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.093998] (rviz_plugins) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.099928] (-) TimerEvent: {}
+[0.104559] (rviz_plugins) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.104842] (waypoint_generator) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.105382] (rviz_plugins) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.105815] (waypoint_generator) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.108065] (rviz_plugins) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.108266] (waypoint_generator) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.112323] (waypoint_generator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.112405] (rviz_plugins) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.117600] (waypoint_generator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.117669] (rviz_plugins) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.132201] (rviz_plugins) StdoutLine: {'line': b'-- Found pluginlib: 5.1.5 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[0.134301] (waypoint_generator) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.2 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.141171] (waypoint_generator) StdoutLine: {'line': b'-- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.142225] (rviz_plugins) StdoutLine: {'line': b'-- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.151687] (waypoint_generator) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.152380] (waypoint_generator) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.153123] (rviz_plugins) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.153862] (rviz_plugins) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.162032] (rviz_plugins) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.166775] (rviz_plugins) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.174821] (rviz_plugins) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.179071] (rviz_plugins) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.185372] (rviz_plugins) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.200025] (-) TimerEvent: {}
+[0.202551] (rviz_plugins) StdoutLine: {'line': b'-- Found rviz_common: 11.2.29 (/opt/ros/humble/share/rviz_common/cmake)\n'}
+[0.203057] (waypoint_generator) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.203743] (rviz_plugins) StdoutLine: {'line': b"-- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'\n"}
+[0.205465] (rviz_plugins) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[0.206007] (rviz_plugins) StdoutLine: {'line': b'-- Found OGRE\n'}
+[0.206037] (rviz_plugins) StdoutLine: {'line': b'--   static     : OFF\n'}
+[0.206059] (rviz_plugins) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[0.206080] (rviz_plugins) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[0.206100] (rviz_plugins) StdoutLine: {'line': b'--   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[0.206118] (rviz_plugins) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[0.206135] (rviz_plugins) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib\n'}
+[0.206151] (rviz_plugins) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[0.206168] (rviz_plugins) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[0.206206] (rviz_plugins) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[0.206230] (rviz_plugins) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[0.206491] (rviz_plugins) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[0.206513] (rviz_plugins) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[0.207376] (rviz_plugins) StdoutLine: {'line': b'-- Could not find freeimage library\n'}
+[0.219961] (waypoint_generator) StdoutLine: {'line': b'-- Found tf2: 0.25.23 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.221595] (waypoint_generator) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.23 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.222811] (waypoint_generator) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.224440] (waypoint_generator) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.243673] (rviz_plugins) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[0.257352] (rviz_plugins) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.293823] (waypoint_generator) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.298980] (waypoint_generator) StdoutLine: {'line': b'-- Generating done\n'}
+[0.300070] (-) TimerEvent: {}
+[0.300725] (waypoint_generator) StdoutLine: {'line': b'-- Build files have been written to: /home/jon/ws11/build/waypoint_generator\n'}
+[0.319099] (waypoint_generator) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target waypoint_generator\n'}
+[0.328353] (rviz_plugins) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.331323] (waypoint_generator) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/waypoint_generator.dir/src/waypoint_generator.cpp.o\n'}
+[0.342008] (rviz_plugins) StdoutLine: {'line': b'-- Generating done\n'}
+[0.343648] (rviz_plugins) StdoutLine: {'line': b'-- Build files have been written to: /home/jon/ws11/build/rviz_plugins\n'}
+[0.372551] (rviz_plugins) StdoutLine: {'line': b'[ 20%] Automatic MOC for target rviz_plugins\n'}
+[0.400179] (-) TimerEvent: {}
+[0.500351] (-) TimerEvent: {}
+[0.533844] (rviz_plugins) StdoutLine: {'line': b'[ 20%] Built target rviz_plugins_autogen\n'}
+[0.544031] (rviz_plugins) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target rviz_plugins\n'}
+[0.555531] (rviz_plugins) StdoutLine: {'line': b'[ 40%] Building CXX object CMakeFiles/rviz_plugins.dir/rviz_plugins_autogen/mocs_compilation.cpp.o\n'}
+[0.555938] (rviz_plugins) StdoutLine: {'line': b'[ 60%] Building CXX object CMakeFiles/rviz_plugins.dir/src/pose_tool.cpp.o\n'}
+[0.558074] (rviz_plugins) StdoutLine: {'line': b'[ 80%] Building CXX object CMakeFiles/rviz_plugins.dir/src/goal_tool.cpp.o\n'}
+[0.601308] (-) TimerEvent: {}
+[0.701475] (-) TimerEvent: {}
+[0.801646] (-) TimerEvent: {}
+[0.901821] (-) TimerEvent: {}
+[1.001996] (-) TimerEvent: {}
+[1.102158] (-) TimerEvent: {}
+[1.202334] (-) TimerEvent: {}
+[1.302510] (-) TimerEvent: {}
+[1.403937] (-) TimerEvent: {}
+[1.504102] (-) TimerEvent: {}
+[1.604269] (-) TimerEvent: {}
+[1.704450] (-) TimerEvent: {}
+[1.804721] (-) TimerEvent: {}
+[1.904917] (-) TimerEvent: {}
+[2.005101] (-) TimerEvent: {}
+[2.105286] (-) TimerEvent: {}
+[2.205460] (-) TimerEvent: {}
+[2.305635] (-) TimerEvent: {}
+[2.405820] (-) TimerEvent: {}
+[2.505961] (-) TimerEvent: {}
+[2.606139] (-) TimerEvent: {}
+[2.706349] (-) TimerEvent: {}
+[2.807196] (-) TimerEvent: {}
+[2.907468] (-) TimerEvent: {}
+[3.007629] (-) TimerEvent: {}
+[3.107793] (-) TimerEvent: {}
+[3.198157] (rviz_plugins) StdoutLine: {'line': b'[100%] Linking CXX shared library librviz_plugins.so\n'}
+[3.207901] (-) TimerEvent: {}
+[3.310620] (-) TimerEvent: {}
+[3.410791] (-) TimerEvent: {}
+[3.510951] (-) TimerEvent: {}
+[3.534296] (rviz_plugins) StdoutLine: {'line': b'[100%] Built target rviz_plugins\n'}
+[3.545975] (rviz_plugins) CommandEnded: {'returncode': 0}
+[3.546240] (rviz_plugins) JobProgress: {'identifier': 'rviz_plugins', 'progress': 'install'}
+[3.553115] (rviz_plugins) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jon/ws11/build/rviz_plugins'], 'cwd': '/home/jon/ws11/build/rviz_plugins', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE', '1'), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'jon'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'Codex Desktop'), ('CODEX_SHELL', '1'), ('all_proxy', 'socks5h://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'x11'), ('LOG_FORMAT', 'json'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jon/ws11/install/rviz_plugins/lib:/home/jon/ws01/install/turtlesim/lib:/home/jon/ws01/install/base_demo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jon'), ('CHROME_DESKTOP', 'chatgpt.desktop'), ('DISABLE_AUTO_UPDATE', 'true'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/jon/.local/share/applications/codex-proxy.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('MANAGERPID', '1322'), ('CODEX_APP_TOOLS_PIPE_PATH', '/tmp/codex-browser-use/a95ec837-1177-4bc5-802e-9efe251f7322.sock'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '1889'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('CODEX_MCP_NODE_PATH', '/usr/lib/chatgpt/resources/cua_node/bin/node'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7076'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/jon/ws11/install:/home/jon/ws02/install:/home/jon/ws01/install'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('ZSH_TMUX_AUTOSTARTED', 'true'), ('LOGNAME', 'jon'), ('ALL_PROXY', 'socks5h://127.0.0.1:7890'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:17510'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'jon'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/jon/.local/bin:/home/jon/.codex/tmp/arg0/codex-arg0vo0q0P:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/home/jon/.local/bin:/opt/ros/humble/bin:/home/jon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/usr/lib/chatgpt/resources'), ('SESSION_MANAGER', 'local/WJ:@/tmp/.ICE-unix/1861,unix/WJ:/tmp/.ICE-unix/1861'), ('CODEX_VERSION', '0.155.0-alpha.9'), ('CODEX_SESSION_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('INVOCATION_ID', '609fee656b7440ac87c092eea7ed7ff3'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/jon/ws11/build/rviz_plugins'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('ZSH_TMUX_AUTOSTART', 'false'), ('CLUTTER_IM_MODULE', 'fcitx'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jon/ws01/install/turtlesim/local/lib/python3.10/dist-packages:/home/jon/ws01/install/base_demo/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble')]), 'shell': False}
+[3.560039] (rviz_plugins) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.560201] (rviz_plugins) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[3.560258] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins//plugin_description.xml\n'}
+[3.560354] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/lib/librviz_plugins.so\n'}
+[3.560411] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/plugin_description.xml\n'}
+[3.560606] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/include/goal_tool.hpp\n'}
+[3.560642] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/include/pose_tool.hpp\n'}
+[3.560713] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/config/ros2_demo.rviz\n'}
+[3.560735] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/config/tutorial_3d.rviz\n'}
+[3.560805] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/launch/visualization_launch.py\n'}
+[3.560865] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/ament_index/resource_index/package_run_dependencies/rviz_plugins\n'}
+[3.560917] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/ament_index/resource_index/parent_prefix_path/rviz_plugins\n'}
+[3.560970] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/environment/ament_prefix_path.sh\n'}
+[3.561016] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/environment/ament_prefix_path.dsv\n'}
+[3.561062] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/environment/path.sh\n'}
+[3.561108] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/environment/path.dsv\n'}
+[3.561149] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/local_setup.bash\n'}
+[3.561190] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/local_setup.sh\n'}
+[3.561229] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/local_setup.zsh\n'}
+[3.561274] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/local_setup.dsv\n'}
+[3.561311] (rviz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/package.dsv\n'}
+[3.567907] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/ament_index/resource_index/packages/rviz_plugins\n'}
+[3.568052] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/ament_index/resource_index/rviz_common__pluginlib__plugin/rviz_plugins\n'}
+[3.568082] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/cmake/rviz_pluginsConfig.cmake\n'}
+[3.568105] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/cmake/rviz_pluginsConfig-version.cmake\n'}
+[3.568125] (rviz_plugins) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/package.xml\n'}
+[3.568834] (rviz_plugins) CommandEnded: {'returncode': 0}
+[3.581234] (rviz_plugins) JobEnded: {'identifier': 'rviz_plugins', 'rc': 0}
+[3.612938] (-) TimerEvent: {}
+[3.713101] (-) TimerEvent: {}
+[3.813258] (-) TimerEvent: {}
+[3.913417] (-) TimerEvent: {}
+[4.013572] (-) TimerEvent: {}
+[4.113734] (-) TimerEvent: {}
+[4.213871] (-) TimerEvent: {}
+[4.314031] (-) TimerEvent: {}
+[4.414218] (-) TimerEvent: {}
+[4.514936] (-) TimerEvent: {}
+[4.615103] (-) TimerEvent: {}
+[4.715933] (-) TimerEvent: {}
+[4.816098] (-) TimerEvent: {}
+[4.916262] (-) TimerEvent: {}
+[5.016486] (-) TimerEvent: {}
+[5.116743] (-) TimerEvent: {}
+[5.218223] (-) TimerEvent: {}
+[5.318388] (-) TimerEvent: {}
+[5.418548] (-) TimerEvent: {}
+[5.518666] (-) TimerEvent: {}
+[5.618823] (-) TimerEvent: {}
+[5.718952] (-) TimerEvent: {}
+[5.819117] (-) TimerEvent: {}
+[5.919287] (-) TimerEvent: {}
+[6.019914] (-) TimerEvent: {}
+[6.121262] (-) TimerEvent: {}
+[6.221618] (-) TimerEvent: {}
+[6.309370] (waypoint_generator) StdoutLine: {'line': b'[100%] Linking CXX executable waypoint_generator\n'}
+[6.321703] (-) TimerEvent: {}
+[6.421876] (-) TimerEvent: {}
+[6.522110] (-) TimerEvent: {}
+[6.607338] (waypoint_generator) StdoutLine: {'line': b'[100%] Built target waypoint_generator\n'}
+[6.615163] (waypoint_generator) CommandEnded: {'returncode': 0}
+[6.615585] (waypoint_generator) JobProgress: {'identifier': 'waypoint_generator', 'progress': 'install'}
+[6.615719] (waypoint_generator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jon/ws11/build/waypoint_generator'], 'cwd': '/home/jon/ws11/build/waypoint_generator', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE', '1'), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'jon'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'Codex Desktop'), ('CODEX_SHELL', '1'), ('all_proxy', 'socks5h://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'x11'), ('LOG_FORMAT', 'json'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jon/ws11/install/rviz_plugins/lib:/home/jon/ws01/install/turtlesim/lib:/home/jon/ws01/install/base_demo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jon'), ('CHROME_DESKTOP', 'chatgpt.desktop'), ('DISABLE_AUTO_UPDATE', 'true'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/jon/.local/share/applications/codex-proxy.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('MANAGERPID', '1322'), ('CODEX_APP_TOOLS_PIPE_PATH', '/tmp/codex-browser-use/a95ec837-1177-4bc5-802e-9efe251f7322.sock'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '1889'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('CODEX_MCP_NODE_PATH', '/usr/lib/chatgpt/resources/cua_node/bin/node'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7076'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/jon/ws11/install:/home/jon/ws02/install:/home/jon/ws01/install'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('ZSH_TMUX_AUTOSTARTED', 'true'), ('LOGNAME', 'jon'), ('ALL_PROXY', 'socks5h://127.0.0.1:7890'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:17510'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'jon'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/jon/.local/bin:/home/jon/.codex/tmp/arg0/codex-arg0vo0q0P:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/home/jon/.local/bin:/opt/ros/humble/bin:/home/jon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/usr/lib/chatgpt/resources'), ('SESSION_MANAGER', 'local/WJ:@/tmp/.ICE-unix/1861,unix/WJ:/tmp/.ICE-unix/1861'), ('CODEX_VERSION', '0.155.0-alpha.9'), ('CODEX_SESSION_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('INVOCATION_ID', '609fee656b7440ac87c092eea7ed7ff3'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/jon/ws11/build/waypoint_generator'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('ZSH_TMUX_AUTOSTART', 'false'), ('CLUTTER_IM_MODULE', 'fcitx'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jon/ws01/install/turtlesim/local/lib/python3.10/dist-packages:/home/jon/ws01/install/base_demo/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble')]), 'shell': False}
+[6.620218] (waypoint_generator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.620336] (waypoint_generator) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[6.620985] (waypoint_generator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/lib/waypoint_generator/waypoint_generator\n'}
+[6.621098] (waypoint_generator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/include/sample_waypoints.hpp\n'}
+[6.621126] (waypoint_generator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/ament_index/resource_index/package_run_dependencies/waypoint_generator\n'}
+[6.621150] (waypoint_generator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/ament_index/resource_index/parent_prefix_path/waypoint_generator\n'}
+[6.621172] (waypoint_generator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/environment/ament_prefix_path.sh\n'}
+[6.621192] (waypoint_generator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/environment/ament_prefix_path.dsv\n'}
+[6.621211] (waypoint_generator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/environment/path.sh\n'}
+[6.621231] (waypoint_generator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/environment/path.dsv\n'}
+[6.621248] (waypoint_generator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/local_setup.bash\n'}
+[6.621266] (waypoint_generator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/local_setup.sh\n'}
+[6.621288] (waypoint_generator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/local_setup.zsh\n'}
+[6.621305] (waypoint_generator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/local_setup.dsv\n'}
+[6.621326] (waypoint_generator) StdoutLine: {'line': b'-- Symlinking: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/package.dsv\n'}
+[6.623796] (-) TimerEvent: {}
+[6.628365] (waypoint_generator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/ament_index/resource_index/packages/waypoint_generator\n'}
+[6.628581] (waypoint_generator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/cmake/waypoint_generatorConfig.cmake\n'}
+[6.628671] (waypoint_generator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/cmake/waypoint_generatorConfig-version.cmake\n'}
+[6.628782] (waypoint_generator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/package.xml\n'}
+[6.629449] (waypoint_generator) CommandEnded: {'returncode': 0}
+[6.635916] (waypoint_generator) JobEnded: {'identifier': 'waypoint_generator', 'rc': 0}
+[6.636128] (grid_path_searcher) JobStarted: {'identifier': 'grid_path_searcher'}
+[6.642693] (grid_path_searcher) JobProgress: {'identifier': 'grid_path_searcher', 'progress': 'cmake'}
+[6.642979] (grid_path_searcher) JobProgress: {'identifier': 'grid_path_searcher', 'progress': 'build'}
+[6.643128] (grid_path_searcher) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jon/ws11/build/grid_path_searcher', '--', '-j24', '-l24'], 'cwd': '/home/jon/ws11/build/grid_path_searcher', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE', '1'), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'jon'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'Codex Desktop'), ('CODEX_SHELL', '1'), ('all_proxy', 'socks5h://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'x11'), ('LOG_FORMAT', 'json'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jon/ws11/install/rviz_plugins/lib:/home/jon/ws01/install/turtlesim/lib:/home/jon/ws01/install/base_demo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jon'), ('CHROME_DESKTOP', 'chatgpt.desktop'), ('DISABLE_AUTO_UPDATE', 'true'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/jon/.local/share/applications/codex-proxy.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('MANAGERPID', '1322'), ('CODEX_APP_TOOLS_PIPE_PATH', '/tmp/codex-browser-use/a95ec837-1177-4bc5-802e-9efe251f7322.sock'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '1889'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('CODEX_MCP_NODE_PATH', '/usr/lib/chatgpt/resources/cua_node/bin/node'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7076'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/jon/ws11/install:/home/jon/ws02/install:/home/jon/ws01/install'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('ZSH_TMUX_AUTOSTARTED', 'true'), ('LOGNAME', 'jon'), ('ALL_PROXY', 'socks5h://127.0.0.1:7890'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:17510'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'jon'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/jon/.local/bin:/home/jon/.codex/tmp/arg0/codex-arg0vo0q0P:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/home/jon/.local/bin:/opt/ros/humble/bin:/home/jon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/usr/lib/chatgpt/resources'), ('SESSION_MANAGER', 'local/WJ:@/tmp/.ICE-unix/1861,unix/WJ:/tmp/.ICE-unix/1861'), ('CODEX_VERSION', '0.155.0-alpha.9'), ('CODEX_SESSION_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('INVOCATION_ID', '609fee656b7440ac87c092eea7ed7ff3'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/jon/ws11/build/grid_path_searcher'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('ZSH_TMUX_AUTOSTART', 'false'), ('CLUTTER_IM_MODULE', 'fcitx'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jon/ws01/install/turtlesim/local/lib/python3.10/dist-packages:/home/jon/ws01/install/base_demo/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws11/install/grid_path_searcher:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble')]), 'shell': False}
+[6.662339] (grid_path_searcher) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[6.724923] (-) TimerEvent: {}
+[6.732202] (grid_path_searcher) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[6.735290] (grid_path_searcher) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[6.746879] (grid_path_searcher) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[6.749537] (grid_path_searcher) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.752112] (grid_path_searcher) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.756438] (grid_path_searcher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.762731] (grid_path_searcher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.778879] (grid_path_searcher) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.2 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[6.785957] (grid_path_searcher) StdoutLine: {'line': b'-- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[6.798765] (grid_path_searcher) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.799368] (grid_path_searcher) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.825047] (-) TimerEvent: {}
+[6.849789] (grid_path_searcher) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.867267] (grid_path_searcher) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[6.874371] (grid_path_searcher) StdoutLine: {'line': b'-- Found tf2: 0.25.23 (/opt/ros/humble/share/tf2/cmake)\n'}
+[6.875841] (grid_path_searcher) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.23 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[6.877093] (grid_path_searcher) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[6.877899] (grid_path_searcher) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[6.911299] (grid_path_searcher) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.2 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[6.926078] (-) TimerEvent: {}
+[6.954937] (grid_path_searcher) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.963198] (grid_path_searcher) StdoutLine: {'line': b'-- Generating done\n'}
+[6.966099] (grid_path_searcher) StdoutLine: {'line': b'-- Build files have been written to: /home/jon/ws11/build/grid_path_searcher\n'}
+[6.986876] (grid_path_searcher) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target random_complex\n'}
+[6.987013] (grid_path_searcher) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target occupancy_demo_node\n'}
+[6.987496] (grid_path_searcher) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target demo_node\n'}
+[6.998012] (grid_path_searcher) StdoutLine: {'line': b'[ 28%] Building CXX object CMakeFiles/demo_node.dir/src/demo_node.cpp.o\n'}
+[6.998116] (grid_path_searcher) StdoutLine: {'line': b'[ 28%] Building CXX object CMakeFiles/demo_node.dir/src/graph_searcher.cpp.o\n'}
+[6.998139] (grid_path_searcher) StdoutLine: {'line': b'[ 42%] Building CXX object CMakeFiles/random_complex.dir/src/random_complex_node.cpp.o\n'}
+[6.999973] (grid_path_searcher) StdoutLine: {'line': b'[ 57%] Building CXX object CMakeFiles/occupancy_demo_node.dir/src/occupancy_demo_node.cpp.o\n'}
+[7.026186] (-) TimerEvent: {}
+[7.126808] (-) TimerEvent: {}
+[7.228997] (-) TimerEvent: {}
+[7.330937] (-) TimerEvent: {}
+[7.431153] (-) TimerEvent: {}
+[7.531379] (-) TimerEvent: {}
+[7.631597] (-) TimerEvent: {}
+[7.732094] (-) TimerEvent: {}
+[7.832425] (-) TimerEvent: {}
+[7.932603] (-) TimerEvent: {}
+[8.032770] (-) TimerEvent: {}
+[8.133064] (-) TimerEvent: {}
+[8.233241] (-) TimerEvent: {}
+[8.333439] (-) TimerEvent: {}
+[8.433633] (-) TimerEvent: {}
+[8.533814] (-) TimerEvent: {}
+[8.634012] (-) TimerEvent: {}
+[8.734400] (-) TimerEvent: {}
+[8.834794] (-) TimerEvent: {}
+[8.934943] (-) TimerEvent: {}
+[9.035363] (-) TimerEvent: {}
+[9.135589] (-) TimerEvent: {}
+[9.235760] (-) TimerEvent: {}
+[9.335945] (-) TimerEvent: {}
+[9.436118] (-) TimerEvent: {}
+[9.536297] (-) TimerEvent: {}
+[9.636486] (-) TimerEvent: {}
+[9.736667] (-) TimerEvent: {}
+[9.814642] (grid_path_searcher) StdoutLine: {'line': b'[ 71%] Linking CXX executable random_complex\n'}
+[9.836778] (-) TimerEvent: {}
+[9.925622] (grid_path_searcher) StdoutLine: {'line': b'[ 71%] Built target random_complex\n'}
+[9.936892] (-) TimerEvent: {}
+[10.037091] (-) TimerEvent: {}
+[10.137341] (-) TimerEvent: {}
+[10.238905] (-) TimerEvent: {}
+[10.339076] (-) TimerEvent: {}
+[10.439261] (-) TimerEvent: {}
+[10.541934] (-) TimerEvent: {}
+[10.642101] (-) TimerEvent: {}
+[10.742277] (-) TimerEvent: {}
+[10.842454] (-) TimerEvent: {}
+[10.942657] (-) TimerEvent: {}
+[11.042840] (-) TimerEvent: {}
+[11.143011] (-) TimerEvent: {}
+[11.243266] (-) TimerEvent: {}
+[11.343676] (-) TimerEvent: {}
+[11.443843] (-) TimerEvent: {}
+[11.544048] (-) TimerEvent: {}
+[11.644293] (-) TimerEvent: {}
+[11.744489] (-) TimerEvent: {}
+[11.844660] (-) TimerEvent: {}
+[11.944931] (-) TimerEvent: {}
+[12.045182] (-) TimerEvent: {}
+[12.145365] (-) TimerEvent: {}
+[12.245589] (-) TimerEvent: {}
+[12.347231] (-) TimerEvent: {}
+[12.447392] (-) TimerEvent: {}
+[12.547551] (-) TimerEvent: {}
+[12.647712] (-) TimerEvent: {}
+[12.747874] (-) TimerEvent: {}
+[12.850104] (-) TimerEvent: {}
+[12.950283] (-) TimerEvent: {}
+[13.050441] (-) TimerEvent: {}
+[13.150588] (-) TimerEvent: {}
+[13.250853] (-) TimerEvent: {}
+[13.257728] (grid_path_searcher) StdoutLine: {'line': b'[ 85%] Linking CXX executable demo_node\n'}
+[13.351978] (-) TimerEvent: {}
+[13.452138] (-) TimerEvent: {}
+[13.552311] (-) TimerEvent: {}
+[13.553142] (grid_path_searcher) StdoutLine: {'line': b'[ 85%] Built target demo_node\n'}
+[13.652935] (-) TimerEvent: {}
+[13.753095] (-) TimerEvent: {}
+[13.853269] (-) TimerEvent: {}
+[13.955270] (-) TimerEvent: {}
+[14.055448] (-) TimerEvent: {}
+[14.155621] (-) TimerEvent: {}
+[14.255994] (-) TimerEvent: {}
+[14.264244] (grid_path_searcher) StdoutLine: {'line': b'[100%] Linking CXX executable occupancy_demo_node\n'}
+[14.356103] (-) TimerEvent: {}
+[14.456306] (-) TimerEvent: {}
+[14.556477] (-) TimerEvent: {}
+[14.654275] (grid_path_searcher) StdoutLine: {'line': b'[100%] Built target occupancy_demo_node\n'}
+[14.656541] (-) TimerEvent: {}
+[14.666918] (grid_path_searcher) CommandEnded: {'returncode': 0}
+[14.668083] (grid_path_searcher) JobProgress: {'identifier': 'grid_path_searcher', 'progress': 'install'}
+[14.668696] (grid_path_searcher) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jon/ws11/build/grid_path_searcher'], 'cwd': '/home/jon/ws11/build/grid_path_searcher', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE', '1'), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'jon'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'Codex Desktop'), ('CODEX_SHELL', '1'), ('all_proxy', 'socks5h://127.0.0.1:7890'), ('XDG_SESSION_TYPE', 'x11'), ('LOG_FORMAT', 'json'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jon/ws11/install/rviz_plugins/lib:/home/jon/ws01/install/turtlesim/lib:/home/jon/ws01/install/base_demo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jon'), ('CHROME_DESKTOP', 'chatgpt.desktop'), ('DISABLE_AUTO_UPDATE', 'true'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/jon/.local/share/applications/codex-proxy.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('MANAGERPID', '1322'), ('CODEX_APP_TOOLS_PIPE_PATH', '/tmp/codex-browser-use/a95ec837-1177-4bc5-802e-9efe251f7322.sock'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '1889'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('CODEX_MCP_NODE_PATH', '/usr/lib/chatgpt/resources/cua_node/bin/node'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7076'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/jon/ws11/install:/home/jon/ws02/install:/home/jon/ws01/install'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('ZSH_TMUX_AUTOSTARTED', 'true'), ('LOGNAME', 'jon'), ('ALL_PROXY', 'socks5h://127.0.0.1:7890'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:17510'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'jon'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/jon/.local/bin:/home/jon/.codex/tmp/arg0/codex-arg0vo0q0P:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/home/jon/.local/bin:/opt/ros/humble/bin:/home/jon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/usr/lib/chatgpt/resources'), ('SESSION_MANAGER', 'local/WJ:@/tmp/.ICE-unix/1861,unix/WJ:/tmp/.ICE-unix/1861'), ('CODEX_VERSION', '0.155.0-alpha.9'), ('CODEX_SESSION_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('INVOCATION_ID', '609fee656b7440ac87c092eea7ed7ff3'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jon/ws11/install/grid_path_searcher:/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '01a0fcd3-8e5b-7073-a40f-cebddd8ad939'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/jon/ws11/build/grid_path_searcher'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('ZSH_TMUX_AUTOSTART', 'false'), ('CLUTTER_IM_MODULE', 'fcitx'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jon/ws01/install/turtlesim/local/lib/python3.10/dist-packages:/home/jon/ws01/install/base_demo/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws11/install/grid_path_searcher:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble')]), 'shell': False}
+[14.674364] (grid_path_searcher) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.674534] (grid_path_searcher) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[14.674785] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/lib/grid_path_searcher/demo_node\n'}
+[14.674970] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/lib/grid_path_searcher/random_complex\n'}
+[14.675400] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/lib/grid_path_searcher/occupancy_demo_node\n'}
+[14.675447] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/include/graph_searcher.hpp\n'}
+[14.675472] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/demo_launch.py\n'}
+[14.675492] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/demo_with_data_launch.py\n'}
+[14.675511] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/occupancy_demo_launch.py\n'}
+[14.676137] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/data/qos_overrides.yaml\n'}
+[14.676205] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/data/tutorial_demo/metadata.yaml\n'}
+[14.676231] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/data/tutorial_demo/tutorial_demo.db3\n'}
+[14.676252] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/ament_index/resource_index/package_run_dependencies/grid_path_searcher\n'}
+[14.676272] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/ament_index/resource_index/parent_prefix_path/grid_path_searcher\n'}
+[14.676291] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/environment/ament_prefix_path.sh\n'}
+[14.676309] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/environment/ament_prefix_path.dsv\n'}
+[14.676331] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/environment/path.sh\n'}
+[14.676348] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/environment/path.dsv\n'}
+[14.676364] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/local_setup.bash\n'}
+[14.677181] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/local_setup.sh\n'}
+[14.677241] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/local_setup.zsh\n'}
+[14.677291] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/local_setup.dsv\n'}
+[14.677336] (grid_path_searcher) StdoutLine: {'line': b'-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/package.dsv\n'}
+[14.683273] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/ament_index/resource_index/packages/grid_path_searcher\n'}
+[14.683355] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/cmake/grid_path_searcherConfig.cmake\n'}
+[14.683460] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/cmake/grid_path_searcherConfig-version.cmake\n'}
+[14.683549] (grid_path_searcher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/package.xml\n'}
+[14.684809] (grid_path_searcher) CommandEnded: {'returncode': 0}
+[14.690092] (grid_path_searcher) JobEnded: {'identifier': 'grid_path_searcher', 'rc': 0}
+[14.690352] (-) EventReactorShutdown: {}

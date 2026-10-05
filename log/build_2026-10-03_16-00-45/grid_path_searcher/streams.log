@@ -1,0 +1,44 @@
+[0.008s] Invoking command in '/home/jon/ws11/build/grid_path_searcher': CMAKE_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws11/install/grid_path_searcher:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble /usr/bin/cmake --build /home/jon/ws11/build/grid_path_searcher -- -j24 -l24
+[0.047s] Consolidate compiler generated dependencies of target occupancy_demo_node
+[0.047s] Consolidate compiler generated dependencies of target random_complex
+[0.048s] Consolidate compiler generated dependencies of target demo_node
+[0.057s] [ 57%] Building CXX object CMakeFiles/demo_node.dir/src/demo_node.cpp.o
+[0.057s] [ 57%] Building CXX object CMakeFiles/random_complex.dir/src/random_complex_node.cpp.o
+[0.057s] [ 57%] Building CXX object CMakeFiles/demo_node.dir/src/graph_searcher.cpp.o
+[0.057s] [ 57%] Building CXX object CMakeFiles/occupancy_demo_node.dir/src/occupancy_demo_node.cpp.o
+[3.088s] [ 71%] Linking CXX executable random_complex
+[3.203s] [ 71%] Built target random_complex
+[6.774s] [ 85%] Linking CXX executable demo_node
+[7.105s] [ 85%] Built target demo_node
+[7.842s] [100%] Linking CXX executable occupancy_demo_node
+[8.258s] [100%] Built target occupancy_demo_node
+[8.268s] Invoked command in '/home/jon/ws11/build/grid_path_searcher' returned '0': CMAKE_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws11/install/grid_path_searcher:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble /usr/bin/cmake --build /home/jon/ws11/build/grid_path_searcher -- -j24 -l24
+[8.269s] Invoking command in '/home/jon/ws11/build/grid_path_searcher': CMAKE_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws11/install/grid_path_searcher:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble /usr/bin/cmake --install /home/jon/ws11/build/grid_path_searcher
+[8.273s] -- Install configuration: ""
+[8.273s] -- Execute custom install script
+[8.273s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/lib/grid_path_searcher/demo_node
+[8.273s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/lib/grid_path_searcher/random_complex
+[8.273s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/lib/grid_path_searcher/occupancy_demo_node
+[8.273s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/include/graph_searcher.hpp
+[8.273s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/demo_launch.py
+[8.273s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/demo_with_data_launch.py
+[8.274s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/occupancy_demo_launch.py
+[8.274s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/data/qos_overrides.yaml
+[8.274s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/data/tutorial_demo/metadata.yaml
+[8.274s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/data/tutorial_demo/tutorial_demo.db3
+[8.274s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/ament_index/resource_index/package_run_dependencies/grid_path_searcher
+[8.274s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/ament_index/resource_index/parent_prefix_path/grid_path_searcher
+[8.274s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/environment/ament_prefix_path.sh
+[8.274s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/environment/ament_prefix_path.dsv
+[8.274s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/environment/path.sh
+[8.274s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/environment/path.dsv
+[8.274s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/local_setup.bash
+[8.274s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/local_setup.sh
+[8.274s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/local_setup.zsh
+[8.274s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/local_setup.dsv
+[8.274s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/package.dsv
+[8.281s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/ament_index/resource_index/packages/grid_path_searcher
+[8.281s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/cmake/grid_path_searcherConfig.cmake
+[8.281s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/cmake/grid_path_searcherConfig-version.cmake
+[8.281s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/package.xml
+[8.283s] Invoked command in '/home/jon/ws11/build/grid_path_searcher' returned '0': CMAKE_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws11/install/grid_path_searcher:/home/jon/ws02/install/cpp02_rosbag:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble /usr/bin/cmake --install /home/jon/ws11/build/grid_path_searcher

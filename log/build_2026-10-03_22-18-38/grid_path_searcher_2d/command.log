@@ -1,0 +1,2 @@
+Invoking command in '/home/jon/ws11/build/grid_path_searcher_2d': /usr/bin/cmake /home/jon/ws11/src/grid_path_searcher_2d -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/jon/ws11/install/grid_path_searcher_2d
+Invoked command in '/home/jon/ws11/build/grid_path_searcher_2d' returned '1': /usr/bin/cmake /home/jon/ws11/src/grid_path_searcher_2d -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/jon/ws11/install/grid_path_searcher_2d

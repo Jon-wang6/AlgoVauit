@@ -1,0 +1,37 @@
+[0.011s] Invoking command in '/home/jon/ws11/build/rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jon/ws11/build/rviz_plugins -- -j24 -l24
+[0.047s] [ 20%] Automatic MOC for target rviz_plugins
+[0.063s] [ 20%] Built target rviz_plugins_autogen
+[0.077s] Consolidate compiler generated dependencies of target rviz_plugins
+[0.089s] [ 40%] Building CXX object CMakeFiles/rviz_plugins.dir/src/goal_tool.cpp.o
+[0.089s] [ 60%] Building CXX object CMakeFiles/rviz_plugins.dir/src/pose_tool.cpp.o
+[2.904s] [ 80%] Linking CXX shared library librviz_plugins.so
+[3.322s] [100%] Built target rviz_plugins
+[3.328s] Invoked command in '/home/jon/ws11/build/rviz_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jon/ws11/build/rviz_plugins -- -j24 -l24
+[3.336s] Invoking command in '/home/jon/ws11/build/rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jon/ws11/build/rviz_plugins
+[3.339s] -- Install configuration: ""
+[3.339s] -- Execute custom install script
+[3.339s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins//plugin_description.xml
+[3.339s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/lib/librviz_plugins.so
+[3.342s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/plugin_description.xml
+[3.342s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/include/goal_tool.hpp
+[3.342s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/include/pose_tool.hpp
+[3.342s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/config/ros2_demo.rviz
+[3.342s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/config/tutorial_3d.rviz
+[3.342s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/launch/visualization_launch.py
+[3.342s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/ament_index/resource_index/package_run_dependencies/rviz_plugins
+[3.342s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/ament_index/resource_index/parent_prefix_path/rviz_plugins
+[3.342s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/environment/ament_prefix_path.sh
+[3.342s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/environment/ament_prefix_path.dsv
+[3.342s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/environment/path.sh
+[3.342s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/environment/path.dsv
+[3.342s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/local_setup.bash
+[3.342s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/local_setup.sh
+[3.342s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/local_setup.zsh
+[3.342s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/local_setup.dsv
+[3.342s] -- Symlinking: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/package.dsv
+[3.349s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/ament_index/resource_index/packages/rviz_plugins
+[3.349s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/ament_index/resource_index/rviz_common__pluginlib__plugin/rviz_plugins
+[3.349s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/cmake/rviz_pluginsConfig.cmake
+[3.349s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/cmake/rviz_pluginsConfig-version.cmake
+[3.349s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/package.xml
+[3.350s] Invoked command in '/home/jon/ws11/build/rviz_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jon/ws11/build/rviz_plugins

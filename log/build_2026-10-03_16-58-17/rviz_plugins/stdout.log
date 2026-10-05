@@ -1,0 +1,30 @@
+[ 20%] Automatic MOC for target rviz_plugins
+[ 20%] Built target rviz_plugins_autogen
+Consolidate compiler generated dependencies of target rviz_plugins
+[100%] Built target rviz_plugins
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins//plugin_description.xml
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/lib/librviz_plugins.so
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/plugin_description.xml
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/include/goal_tool.hpp
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/include/pose_tool.hpp
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/config/ros2_demo.rviz
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/config/tutorial_3d.rviz
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/launch/visualization_launch.py
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/ament_index/resource_index/package_run_dependencies/rviz_plugins
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/ament_index/resource_index/parent_prefix_path/rviz_plugins
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/environment/path.sh
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/environment/path.dsv
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/local_setup.bash
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/local_setup.sh
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/local_setup.zsh
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/local_setup.dsv
+-- Symlinking: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/package.dsv
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/ament_index/resource_index/packages/rviz_plugins
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/ament_index/resource_index/rviz_common__pluginlib__plugin/rviz_plugins
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/cmake/rviz_pluginsConfig.cmake
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/cmake/rviz_pluginsConfig-version.cmake
+-- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/package.xml

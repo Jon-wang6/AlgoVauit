@@ -1,0 +1,20 @@
+/home/jon/ws11/src/grid_path_searcher/src/graph_searcher.cpp: In member function ‘void JPS3DNeib::Neib(int, int, int, int, int, int&, int&, int&)’:
+/home/jon/ws11/src/grid_path_searcher/src/graph_searcher.cpp:524:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  524 |             switch(dev)
+      |             ^~~~~~
+/home/jon/ws11/src/grid_path_searcher/src/graph_searcher.cpp:553:9: note: here
+  553 |         case 1:
+      |         ^~~~
+/home/jon/ws11/src/grid_path_searcher/src/graph_searcher.cpp:556:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  556 |             switch(dev){
+      |             ^~~~~~
+/home/jon/ws11/src/grid_path_searcher/src/graph_searcher.cpp:572:9: note: here
+  572 |         case 3:
+      |         ^~~~
+/home/jon/ws11/src/grid_path_searcher/src/graph_searcher.cpp: In member function ‘void JPS3DNeib::FNeib(int, int, int, int, int, int&, int&, int&, int&, int&, int&)’:
+/home/jon/ws11/src/grid_path_searcher/src/graph_searcher.cpp:615:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  615 |             if(dx == 0){
+      |             ^~
+/home/jon/ws11/src/grid_path_searcher/src/graph_searcher.cpp:774:9: note: here
+  774 |         case 3:
+      |         ^~~~

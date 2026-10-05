@@ -1,0 +1,4 @@
+Invoking command in '/home/jon/ws11/build/rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jon/ws11/build/rviz_plugins -- -j24 -l24
+Invoked command in '/home/jon/ws11/build/rviz_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jon/ws11/build/rviz_plugins -- -j24 -l24
+Invoking command in '/home/jon/ws11/build/rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jon/ws11/build/rviz_plugins
+Invoked command in '/home/jon/ws11/build/rviz_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jon/ws11/build/rviz_plugins

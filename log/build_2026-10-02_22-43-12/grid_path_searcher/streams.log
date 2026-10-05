@@ -1,0 +1,82 @@
+[0.007s] Invoking command in '/home/jon/ws11/build/grid_path_searcher': AMENT_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble LD_LIBRARY_PATH=/home/jon/ws11/install/rviz_plugins/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/jon/ws11/build/grid_path_searcher -- -j24 -l24
+[0.025s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.090s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.093s] -- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.105s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.106s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.108s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.112s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.117s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.136s] -- Found nav_msgs: 4.9.2 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.141s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[0.152s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.152s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.205s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.226s] -- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.233s] -- Found tf2: 0.25.23 (/opt/ros/humble/share/tf2/cmake)
+[0.235s] -- Found tf2_geometry_msgs: 0.25.23 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.237s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.237s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.271s] -- Found visualization_msgs: 4.9.2 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.313s] -- Configuring done
+[0.322s] -- Generating done
+[0.324s] -- Build files have been written to: /home/jon/ws11/build/grid_path_searcher
+[0.350s] [ 20%] Building CXX object CMakeFiles/demo_node.dir/src/tutorial_demo_node.cpp.o
+[0.352s] [ 40%] Building CXX object CMakeFiles/demo_node.dir/src/graph_searcher.cpp.o
+[0.352s] [ 60%] Building CXX object CMakeFiles/occupancy_demo_node.dir/src/occupancy_demo_node.cpp.o
+[1.059s] /home/jon/ws11/src/grid_path_searcher/src/graph_searcher.cpp: In member function ‘void JPS3DNeib::Neib(int, int, int, int, int, int&, int&, int&)’:
+[1.059s] /home/jon/ws11/src/grid_path_searcher/src/graph_searcher.cpp:524:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
+[1.059s]   524 |             switch(dev)
+[1.059s]       |             ^~~~~~
+[1.060s] /home/jon/ws11/src/grid_path_searcher/src/graph_searcher.cpp:553:9: note: here
+[1.060s]   553 |         case 1:
+[1.060s]       |         ^~~~
+[1.060s] /home/jon/ws11/src/grid_path_searcher/src/graph_searcher.cpp:556:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
+[1.060s]   556 |             switch(dev){
+[1.060s]       |             ^~~~~~
+[1.060s] /home/jon/ws11/src/grid_path_searcher/src/graph_searcher.cpp:572:9: note: here
+[1.060s]   572 |         case 3:
+[1.060s]       |         ^~~~
+[1.060s] /home/jon/ws11/src/grid_path_searcher/src/graph_searcher.cpp: In member function ‘void JPS3DNeib::FNeib(int, int, int, int, int, int&, int&, int&, int&, int&, int&)’:
+[1.060s] /home/jon/ws11/src/grid_path_searcher/src/graph_searcher.cpp:615:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
+[1.060s]   615 |             if(dx == 0){
+[1.060s]       |             ^~
+[1.060s] /home/jon/ws11/src/grid_path_searcher/src/graph_searcher.cpp:774:9: note: here
+[1.060s]   774 |         case 3:
+[1.060s]       |         ^~~~
+[5.681s] [ 80%] Linking CXX executable demo_node
+[5.929s] [ 80%] Built target demo_node
+[7.548s] [100%] Linking CXX executable occupancy_demo_node
+[7.940s] [100%] Built target occupancy_demo_node
+[7.949s] Invoked command in '/home/jon/ws11/build/grid_path_searcher' returned '0': AMENT_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble LD_LIBRARY_PATH=/home/jon/ws11/install/rviz_plugins/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/jon/ws11/build/grid_path_searcher -- -j24 -l24
+[7.949s] Invoking command in '/home/jon/ws11/build/grid_path_searcher': AMENT_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble LD_LIBRARY_PATH=/home/jon/ws11/install/rviz_plugins/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/jon/ws11/build/grid_path_searcher
+[7.954s] -- Install configuration: ""
+[7.954s] -- Execute custom install script
+[7.955s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/lib/grid_path_searcher/demo_node
+[7.955s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher/lib/grid_path_searcher/occupancy_demo_node
+[7.961s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/demo.launch
+[7.961s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/demo.launch.py
+[7.961s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/demo_with_data.launch.py
+[7.961s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/occupancy_demo.launch.py
+[7.967s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/rviz_config/demo.rviz
+[7.967s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/rviz_config/demo_wx.rviz
+[7.968s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/rviz_config/jps_demo.rviz
+[7.968s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/data/qos_overrides.yaml
+[7.968s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/data/tutorial_demo/metadata.yaml
+[7.968s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/data/tutorial_demo/tutorial_demo.db3
+[7.968s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/ament_index/resource_index/package_run_dependencies/grid_path_searcher
+[7.968s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/ament_index/resource_index/parent_prefix_path/grid_path_searcher
+[7.968s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/environment/ament_prefix_path.sh
+[7.968s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/environment/ament_prefix_path.dsv
+[7.968s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/environment/path.sh
+[7.968s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/environment/path.dsv
+[7.968s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/local_setup.bash
+[7.968s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/local_setup.sh
+[7.968s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/local_setup.zsh
+[7.968s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/local_setup.dsv
+[7.968s] -- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/package.dsv
+[7.975s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/ament_index/resource_index/packages/grid_path_searcher
+[7.975s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/cmake/grid_path_searcherConfig.cmake
+[7.975s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/cmake/grid_path_searcherConfig-version.cmake
+[7.975s] -- Up-to-date symlink: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/package.xml
+[7.977s] Invoked command in '/home/jon/ws11/build/grid_path_searcher' returned '0': AMENT_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jon/ws11/install/waypoint_generator:/home/jon/ws11/install/rviz_plugins:/home/jon/ws02/install/cpp01_launch:/home/jon/ws01/install/tutorails_plumbing:/home/jon/ws01/install/cpp07_exercise:/home/jon/ws01/install/turtlesim:/home/jon/ws01/install/cpp06_time:/home/jon/ws01/install/cpp05_names:/home/jon/ws01/install/cpp04_param:/home/jon/ws01/install/cpp03_action:/home/jon/ws01/install/cpp02_service:/home/jon/ws01/install/cpp01_topic:/home/jon/ws01/install/base_demo:/opt/ros/humble LD_LIBRARY_PATH=/home/jon/ws11/install/rviz_plugins/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/jon/ws11/build/grid_path_searcher

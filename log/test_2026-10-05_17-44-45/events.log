@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000642] (grid_path_searcher_2d) JobQueued: {'identifier': 'grid_path_searcher_2d', 'dependencies': OrderedDict([('rviz_plugins', '/home/jon/ws11/install/rviz_plugins'), ('waypoint_generator', '/home/jon/ws11/install/waypoint_generator'), ('grid_path_searcher_2d', '/home/jon/ws11/install/grid_path_searcher_2d')])}
+[0.000709] (grid_path_searcher_2d) JobStarted: {'identifier': 'grid_path_searcher_2d'}
+[0.024293] (grid_path_searcher_2d) JobEnded: {'identifier': 'grid_path_searcher_2d', 'rc': 0}
+[0.024586] (-) EventReactorShutdown: {}

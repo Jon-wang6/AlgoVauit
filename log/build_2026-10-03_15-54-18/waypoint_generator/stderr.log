@@ -1,0 +1,8 @@
+/home/jon/ws11/src/waypoint_generator/src/waypoint_generator.hpp:1:9: warning: #pragma once in main file
+    1 | #pragma once
+      |         ^~~~
+CMakeFiles/waypoint_generator.dir/src/waypoint_generator.hpp.o: file not recognized: file format not recognized
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/waypoint_generator.dir/build.make:205：waypoint_generator] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/waypoint_generator.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

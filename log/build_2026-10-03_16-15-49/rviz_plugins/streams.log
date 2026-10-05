@@ -1,0 +1,77 @@
+[0.006s] Invoking command in '/home/jon/ws11/build/rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jon/ws11/build/rviz_plugins -- -j24 -l24
+[0.024s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.088s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.093s] -- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.103s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.104s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.107s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.111s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.116s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.131s] -- Found pluginlib: 5.1.5 (/opt/ros/humble/share/pluginlib/cmake)
+[0.141s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[0.152s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.152s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.161s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.165s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.173s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.178s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.184s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.201s] -- Found rviz_common: 11.2.29 (/opt/ros/humble/share/rviz_common/cmake)
+[0.202s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[0.204s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[0.205s] -- Found OGRE
+[0.205s] --   static     : OFF
+[0.205s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[0.205s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.205s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[0.205s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[0.205s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[0.205s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.205s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[0.205s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.205s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.205s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.205s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.206s] -- Could not find freeimage library
+[0.242s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[0.256s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.327s] -- Configuring done
+[0.341s] -- Generating done
+[0.342s] -- Build files have been written to: /home/jon/ws11/build/rviz_plugins
+[0.371s] [ 20%] Automatic MOC for target rviz_plugins
+[0.532s] [ 20%] Built target rviz_plugins_autogen
+[0.543s] Consolidate compiler generated dependencies of target rviz_plugins
+[0.554s] [ 40%] Building CXX object CMakeFiles/rviz_plugins.dir/rviz_plugins_autogen/mocs_compilation.cpp.o
+[0.554s] [ 60%] Building CXX object CMakeFiles/rviz_plugins.dir/src/pose_tool.cpp.o
+[0.557s] [ 80%] Building CXX object CMakeFiles/rviz_plugins.dir/src/goal_tool.cpp.o
+[3.197s] [100%] Linking CXX shared library librviz_plugins.so
+[3.534s] [100%] Built target rviz_plugins
+[3.545s] Invoked command in '/home/jon/ws11/build/rviz_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jon/ws11/build/rviz_plugins -- -j24 -l24
+[3.552s] Invoking command in '/home/jon/ws11/build/rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jon/ws11/build/rviz_plugins
+[3.559s] -- Install configuration: ""
+[3.559s] -- Execute custom install script
+[3.559s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins//plugin_description.xml
+[3.559s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/lib/librviz_plugins.so
+[3.559s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/plugin_description.xml
+[3.559s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/include/goal_tool.hpp
+[3.559s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/include/pose_tool.hpp
+[3.559s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/config/ros2_demo.rviz
+[3.559s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/config/tutorial_3d.rviz
+[3.559s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/launch/visualization_launch.py
+[3.559s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/ament_index/resource_index/package_run_dependencies/rviz_plugins
+[3.559s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/ament_index/resource_index/parent_prefix_path/rviz_plugins
+[3.559s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/environment/ament_prefix_path.sh
+[3.560s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/environment/ament_prefix_path.dsv
+[3.560s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/environment/path.sh
+[3.560s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/environment/path.dsv
+[3.560s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/local_setup.bash
+[3.560s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/local_setup.sh
+[3.560s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/local_setup.zsh
+[3.560s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/local_setup.dsv
+[3.560s] -- Symlinking: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/package.dsv
+[3.566s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/ament_index/resource_index/packages/rviz_plugins
+[3.567s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/ament_index/resource_index/rviz_common__pluginlib__plugin/rviz_plugins
+[3.567s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/cmake/rviz_pluginsConfig.cmake
+[3.567s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/cmake/rviz_pluginsConfig-version.cmake
+[3.567s] -- Up-to-date symlink: /home/jon/ws11/install/rviz_plugins/share/rviz_plugins/package.xml
+[3.568s] Invoked command in '/home/jon/ws11/build/rviz_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jon/ws11/build/rviz_plugins

@@ -1,0 +1,12 @@
+/home/jon/ws11/src/grid_path_searcher/src/random_complex_node.hpp:1:9: warning: #pragma once in main file
+    1 | #pragma once
+      |         ^~~~
+/home/jon/ws11/src/grid_path_searcher/src/demo_node.hpp:1:9: warning: #pragma once in main file
+    1 | #pragma once
+      |         ^~~~
+/home/jon/ws11/src/grid_path_searcher/src/graph_searcher_impl.hpp:1:9: warning: #pragma once in main file
+    1 | #pragma once
+      |         ^~~~
+/home/jon/ws11/src/grid_path_searcher/src/occupancy_demo_node.hpp:1:9: warning: #pragma once in main file
+    1 | #pragma once
+      |         ^~~~

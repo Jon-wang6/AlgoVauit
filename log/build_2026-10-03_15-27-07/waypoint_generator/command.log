@@ -1,0 +1,6 @@
+Invoking command in '/home/jon/ws11/build/waypoint_generator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jon/ws11/src/waypoint_generator -DCMAKE_INSTALL_PREFIX=/home/jon/ws11/install/waypoint_generator
+Invoked command in '/home/jon/ws11/build/waypoint_generator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jon/ws11/src/waypoint_generator -DCMAKE_INSTALL_PREFIX=/home/jon/ws11/install/waypoint_generator
+Invoking command in '/home/jon/ws11/build/waypoint_generator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jon/ws11/build/waypoint_generator -- -j24 -l24
+Invoked command in '/home/jon/ws11/build/waypoint_generator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jon/ws11/build/waypoint_generator -- -j24 -l24
+Invoking command in '/home/jon/ws11/build/waypoint_generator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jon/ws11/build/waypoint_generator
+Invoked command in '/home/jon/ws11/build/waypoint_generator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jon/ws11/build/waypoint_generator

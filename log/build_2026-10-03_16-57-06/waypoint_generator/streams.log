@@ -1,0 +1,47 @@
+[0.005s] Invoking command in '/home/jon/ws11/build/waypoint_generator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jon/ws11/build/waypoint_generator -- -j24 -l24
+[0.026s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.098s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.102s] -- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.110s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.114s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.115s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.118s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.126s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.140s] -- Found nav_msgs: 4.9.2 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.147s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[0.159s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.159s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.211s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.228s] -- Found tf2: 0.25.23 (/opt/ros/humble/share/tf2/cmake)
+[0.230s] -- Found tf2_geometry_msgs: 0.25.23 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.231s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.232s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.308s] -- Configuring done
+[0.313s] -- Generating done
+[0.317s] -- Build files have been written to: /home/jon/ws11/build/waypoint_generator
+[0.338s] Consolidate compiler generated dependencies of target waypoint_generator
+[0.348s] [ 50%] Building CXX object CMakeFiles/waypoint_generator.dir/src/waypoint_generator.cpp.o
+[6.450s] [100%] Linking CXX executable waypoint_generator
+[6.757s] [100%] Built target waypoint_generator
+[6.768s] Invoked command in '/home/jon/ws11/build/waypoint_generator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jon/ws11/build/waypoint_generator -- -j24 -l24
+[6.768s] Invoking command in '/home/jon/ws11/build/waypoint_generator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jon/ws11/build/waypoint_generator
+[6.774s] -- Install configuration: ""
+[6.774s] -- Execute custom install script
+[6.774s] -- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/lib/waypoint_generator/waypoint_generator
+[6.775s] -- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/include/sample_waypoints.hpp
+[6.775s] -- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/ament_index/resource_index/package_run_dependencies/waypoint_generator
+[6.775s] -- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/ament_index/resource_index/parent_prefix_path/waypoint_generator
+[6.775s] -- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/environment/ament_prefix_path.sh
+[6.775s] -- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/environment/ament_prefix_path.dsv
+[6.775s] -- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/environment/path.sh
+[6.775s] -- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/environment/path.dsv
+[6.775s] -- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/local_setup.bash
+[6.775s] -- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/local_setup.sh
+[6.775s] -- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/local_setup.zsh
+[6.775s] -- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/local_setup.dsv
+[6.775s] -- Symlinking: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/package.dsv
+[6.781s] -- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/ament_index/resource_index/packages/waypoint_generator
+[6.781s] -- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/cmake/waypoint_generatorConfig.cmake
+[6.781s] -- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/cmake/waypoint_generatorConfig-version.cmake
+[6.781s] -- Up-to-date symlink: /home/jon/ws11/install/waypoint_generator/share/waypoint_generator/package.xml
+[6.782s] Invoked command in '/home/jon/ws11/build/waypoint_generator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jon/ws11/build/waypoint_generator

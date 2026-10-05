@@ -1,0 +1,47 @@
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found nav_msgs: 4.9.2 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found tf2: 0.25.23 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_geometry_msgs: 0.25.23 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found visualization_msgs: 4.9.2 (/opt/ros/humble/share/visualization_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jon/ws11/build/grid_path_searcher
+Consolidate compiler generated dependencies of target demo_node
+[ 50%] Linking CXX executable demo_node
+[100%] Built target demo_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/lib/grid_path_searcher/demo_node
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/demo.launch
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/demo.launch.py
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/rviz_config/demo.rviz
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/rviz_config/demo_wx.rviz
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/launch/rviz_config/jps_demo.rviz
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/ament_index/resource_index/package_run_dependencies/grid_path_searcher
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/ament_index/resource_index/parent_prefix_path/grid_path_searcher
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/environment/ament_prefix_path.sh
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/environment/ament_prefix_path.dsv
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/environment/path.sh
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/environment/path.dsv
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/local_setup.bash
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/local_setup.sh
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/local_setup.zsh
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/local_setup.dsv
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/package.dsv
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/ament_index/resource_index/packages/grid_path_searcher
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/cmake/grid_path_searcherConfig.cmake
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/cmake/grid_path_searcherConfig-version.cmake
+-- Symlinking: /home/jon/ws11/install/grid_path_searcher/share/grid_path_searcher/package.xml
