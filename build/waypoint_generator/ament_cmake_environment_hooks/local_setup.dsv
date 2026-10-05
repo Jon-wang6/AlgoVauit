@@ -1,0 +1,2 @@
+source;share/waypoint_generator/environment/ament_prefix_path.sh
+source;share/waypoint_generator/environment/path.sh

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+  文件：waypoint_generator/package.xml
+  用途：声明航点生成包的元数据、许可证与 ROS 2 依赖。
+  包含的类与函数：无；XML 节点列出 geometry/nav 消息、rclcpp 和 TF 转换依赖，
+  并通过 export 指定 ament_cmake 构建类型。
+-->
+<package format="3">
+  <name>waypoint_generator</name>
+  <version>0.1.0</version>
+  <description>支持手动目标和预设轨迹模式的 ROS 2 航点生成器。</description>
+  <maintainer email="eeshaojie@todo.todo">Shaojie Shen</maintainer>
+  <license>BSD-3-Clause</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>rclcpp</depend>
+  <depend>tf2</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

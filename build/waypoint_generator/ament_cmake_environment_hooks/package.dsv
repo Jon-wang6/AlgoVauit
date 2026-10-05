@@ -1,0 +1,4 @@
+source;share/waypoint_generator/local_setup.bash
+source;share/waypoint_generator/local_setup.dsv
+source;share/waypoint_generator/local_setup.sh
+source;share/waypoint_generator/local_setup.zsh
