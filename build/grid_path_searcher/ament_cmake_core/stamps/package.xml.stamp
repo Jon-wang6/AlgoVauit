@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+  文件：grid_path_searcher/package.xml
+  用途：声明路径规划包的身份、许可证以及构建/运行依赖。
+  包含的类与函数：无；XML 节点分为包元数据、ament_cmake 构建依赖、消息/TF
+  依赖和 launch、rosbag2、RViz、配套功能包等运行依赖。
+-->
+<package format="3">
+  <name>grid_path_searcher</name>
+  <version>0.1.0</version>
+  <description>ROS 2 三维 A*、JPS 与二维 OccupancyGrid 路径规划演示。</description>
+  <maintainer email="ustfeigao@gmail.com">fgaoaa</maintainer>
+  <license>BSD-3-Clause</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>rosbag2</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>rviz_plugins</exec_depend>
+  <exec_depend>waypoint_generator</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-34330b1496290cd8a21e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "grid_path_searcher",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "demo_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-demo_node-49ac843cfd6209490def.json",
+					"name" : "demo_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "grid_path_searcher_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-grid_path_searcher_uninstall-5d4a160beb1f5ca285b6.json",
+					"name" : "grid_path_searcher_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "occupancy_demo_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-occupancy_demo_node-e4d0c369d8492d5a6ce4.json",
+					"name" : "occupancy_demo_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "random_complex::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-random_complex-8d6dcb25326c37355bb2.json",
+					"name" : "random_complex",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-cd4574df25f2d565ffa6.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jon/ws11/build/grid_path_searcher",
+		"source" : "/home/jon/ws11/src/grid_path_searcher"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
