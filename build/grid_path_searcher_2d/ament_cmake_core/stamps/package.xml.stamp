@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+  文件：grid_path_searcher_2d/package.xml
+  用途：声明二维随机地图与路径规划演示包的身份、许可证及依赖。
+  包含的类与函数：无；XML 节点包含包元数据、消息/TF/可视化构建依赖，
+  以及 launch、RViz2、waypoint_generator 等运行依赖。
+-->
+<package format="3">
+  <name>grid_path_searcher_2d</name>
+  <version>0.1.0</version>
+  <description>ROS 2 二维多算法路径规划及 RViz 实时参数面板。</description>
+  <maintainer email="jon@example.com">jon</maintainer>
+  <license>BSD-3-Clause</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>qtbase5-dev</build_depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>pluginlib</depend>
+  <depend>rclcpp</depend>
+  <depend>rcl_interfaces</depend>
+  <depend>rviz_common</depend>
+  <depend>std_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>rviz_plugins</exec_depend>
+  <exec_depend>libqt5-core</exec_depend>
+  <exec_depend>libqt5-gui</exec_depend>
+  <exec_depend>libqt5-widgets</exec_depend>
+  <exec_depend>waypoint_generator</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

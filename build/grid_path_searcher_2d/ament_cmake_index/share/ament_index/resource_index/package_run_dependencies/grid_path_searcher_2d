@@ -1,0 +1,1 @@
+geometry_msgs;nav_msgs;pluginlib;rclcpp;rcl_interfaces;rviz_common;std_msgs;tf2;tf2_geometry_msgs;visualization_msgs;launch;launch_ros;rviz2;rviz_plugins;libqt5-core;libqt5-gui;libqt5-widgets;waypoint_generator
