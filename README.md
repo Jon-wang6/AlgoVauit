@@ -97,3 +97,7 @@ ros2 launch grid_path_searcher_2d demo_launch.py map_seed:=11
 ## RViz2 参数面板
 
 参数面板支持在运行时调整规划参数并重新执行算法，适合观察参数变化对成功率、路径质量、访问节点数量和运行耗时的影响。终端与 RViz2 会同步展示各算法结果，便于横向比较。
+
+## 参考资料
+
+- [ROS 2 二维路径规划算法学习与实现](https://www.yuque.com/g/jonwang-pfbbk/gd0so3/aisohqo8yfbk70np/collaborator/join?token=QXzK0gTytpligebR&source=doc_collaborator#)
