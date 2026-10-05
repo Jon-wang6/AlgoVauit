@@ -1,0 +1,13 @@
+<!--
+  文件：plugin_description.xml
+  用途：向 pluginlib/RViz2 注册二维包的全算法实时参数面板。
+  包含的类：grid_path_searcher_2d::RrtStarPanel；基类为 rviz_common::Panel。
+  包含的函数：无；运行时由 pluginlib 加载共享库和面板类。
+-->
+<library path="grid_path_searcher_2d_rviz_panel">
+  <class name="grid_path_searcher_2d/RrtStarPanel"
+         type="grid_path_searcher_2d::RrtStarPanel"
+         base_class_type="rviz_common::Panel">
+    <description>实时调整二维地图和全部十种规划算法的可调参数。</description>
+  </class>
+</library>

@@ -1,0 +1,30 @@
+# 文件：metadata.yaml
+# 用途：rosbag2 数据包索引，描述二维教程地图录制数据的存储与话题信息。
+# 包含的类与函数：无；包含版本、存储插件、时间范围、消息数量、话题类型及
+# tutorial_demo.db3 相对路径。ros2 bag play 会读取本文件定位并解释数据库消息。
+rosbag2_bagfile_information:
+  version: 5
+  storage_identifier: sqlite3
+  duration:
+    nanoseconds: 10101790040
+  starting_time:
+    nanoseconds_since_epoch: 1662456109688620041
+  message_count: 2
+  topics_with_message_count:
+    - topic_metadata:
+        name: /grid_map_global
+        type: nav_msgs/msg/OccupancyGrid
+        serialization_format: cdr
+        offered_qos_profiles: ""
+      message_count: 2
+  compression_format: ""
+  compression_mode: ""
+  relative_file_paths:
+    - tutorial_demo.db3
+  files:
+    - path: tutorial_demo.db3
+      starting_time:
+        nanoseconds_since_epoch: 1662456109688620041
+      duration:
+        nanoseconds: 10101790040
+      message_count: 2

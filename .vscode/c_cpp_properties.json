@@ -1,0 +1,34 @@
+// 文件：c_cpp_properties.json
+// 用途：配置 VS Code C/C++ 扩展的 ROS 2 Humble IntelliSense 环境。
+// 包含的类与函数：无；包含编译器、compile_commands、语言标准、头文件搜索路径
+// 与符号浏览路径。VS Code 按 JSON with Comments 语法读取本文件。
+{
+  "configurations": [
+    {
+      "name": "ROS 2 Humble",
+      "compilerPath": "/usr/bin/g++",
+      "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+      "cppStandard": "c++17",
+      "cStandard": "c17",
+      "intelliSenseMode": "linux-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/src/**",
+        "${workspaceFolder}/install/**",
+        "/opt/ros/humble/include/**",
+        "/usr/include/eigen3",
+        "/usr/include/**"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}/src",
+          "${workspaceFolder}/install",
+          "/opt/ros/humble/include",
+          "/usr/include/eigen3",
+          "/usr/include"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    }
+  ],
+  "version": 4
+}

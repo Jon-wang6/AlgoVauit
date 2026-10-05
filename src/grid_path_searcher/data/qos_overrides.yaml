@@ -1,0 +1,10 @@
+# 文件：qos_overrides.yaml
+# 用途：覆盖 rosbag2 播放 /grid_map_global 时采用的 QoS，确保二维地图可靠送达。
+# 包含的类与函数：无；本文件只包含 /grid_map_global 的 reliability、durability、
+# history 和 depth 四项 QoS 参数。
+# 工作方式：Reliable 防止主动丢包，Transient Local 允许稍后启动的订阅器收到地图。
+/grid_map_global:
+  reliability: reliable
+  durability: transient_local
+  history: keep_last
+  depth: 1

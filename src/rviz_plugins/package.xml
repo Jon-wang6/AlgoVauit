@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+  文件：rviz_plugins/package.xml
+  用途：声明 Goal3DTool RViz2 插件包的元数据、许可证与依赖。
+  包含的类与函数：无；XML 节点列出 Qt、pluginlib、RViz、消息与 TF 依赖，
+  并通过 export 指定 ament_cmake 构建类型。
+-->
+<package format="3">
+  <name>rviz_plugins</name>
+  <version>0.1.0</version>
+  <description>用于交互设置三维导航目标的 ROS 2 RViz 插件。</description>
+  <maintainer email="eeshaojie@todo.todo">Shaojie Shen</maintainer>
+  <license>BSD-3-Clause</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>qtbase5-dev</build_depend>
+  <depend>geometry_msgs</depend>
+  <depend>pluginlib</depend>
+  <depend>rclcpp</depend>
+  <depend>rviz_common</depend>
+  <depend>rviz_rendering</depend>
+  <depend>tf2</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <exec_depend>libqt5-core</exec_depend>
+  <exec_depend>libqt5-gui</exec_depend>
+  <exec_depend>libqt5-widgets</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

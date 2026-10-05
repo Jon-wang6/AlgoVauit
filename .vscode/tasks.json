@@ -1,0 +1,39 @@
+// 文件：tasks.json
+// 用途：定义可从 VS Code 直接执行的 ws11 构建与启动任务。
+// 包含的类与函数：无；tasks 数组包含 colcon build、三维 demo launch 等 shell 任务，
+// 每项均在 workspaceFolder 下运行。VS Code 按 JSON with Comments 语法读取本文件。
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ROS 2: build ws11",
+      "type": "shell",
+      "command": "source /opt/ros/humble/setup.bash && colcon build --symlink-install --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "shell": {
+          "executable": "/bin/bash",
+          "args": ["-c"]
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "ROS 2: launch 3D demo",
+      "type": "shell",
+      "command": "source /opt/ros/humble/setup.bash && source ${workspaceFolder}/install/setup.bash && ros2 launch grid_path_searcher demo_launch.py",
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "shell": {
+          "executable": "/bin/bash",
+          "args": ["-c"]
+        }
+      },
+      "problemMatcher": []
+    }
+  ]
+}

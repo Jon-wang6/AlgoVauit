@@ -1,0 +1,334 @@
+# 文件：demo_2d.rviz
+# 用途：逐像素障碍、地面小格及十种二维规划算法的 RViz2 配置。
+# 包含的类与函数：无源码类/函数；配置多个 Marker、Path、Goal3DTool 和俯视视角。
+# 数据流程：订阅 demo_node_2d 输出；Goal3DTool 向 /goal 发布新目标。
+Panels:
+  - Class: grid_path_searcher_2d/RrtStarPanel
+    Name: 全部算法参数
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+  - Class: rviz_common/Tool Properties
+    Name: Tool Properties
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.75
+      Cell Size: 0.2
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.01
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset: {X: 0, Y: 0, Z: 0}
+      Plane: XY
+      Plane Cell Count: 100
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: OccupiedPixels
+      Namespaces: {occupied_pixels: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/map_pixels_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: AStarVisited
+      Namespaces: {astar_visited: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/visited_nodes_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: AStarPath
+      Namespaces: {astar_path: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/astar_path_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: TimeBreakAStarVisited
+      Namespaces: {timed_astar_visited: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/timed_astar_visited_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: TimeBreakAStarPath
+      Namespaces: {timed_astar_path: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/timed_astar_path_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: DijkstraPath
+      Namespaces: {dijkstra_path: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/dijkstra_path_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: JPSPath
+      Namespaces: {jps_path: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/jps_path_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: JPSJumpPoints
+      Namespaces: {jps_jump_points: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/jps_jump_points_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: PRMRoadmap
+      Namespaces: {prm_roadmap: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/prm_roadmap_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: PRMPath
+      Namespaces: {prm_path: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/prm_path_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: RRTTree
+      Namespaces: {rrt_tree: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/rrt_tree_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: RRTPath
+      Namespaces: {rrt_path: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/rrt_path_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: RRTStarTree
+      Namespaces: {rrt_star_tree: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/rrt_star_tree_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: RRTStarPath
+      Namespaces: {rrt_star_path: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/rrt_star_path_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: KinodynamicRRTStarTree
+      Namespaces: {kinodynamic_rrt_star_tree: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/kinodynamic_rrt_star_tree_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: KinodynamicRRTStarPath
+      Namespaces: {kinodynamic_rrt_star_path: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/kinodynamic_rrt_star_path_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: AnytimeRRTStarTree
+      Namespaces: {anytime_rrt_star_tree: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/anytime_rrt_star_tree_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: AnytimeRRTStarPath
+      Namespaces: {anytime_rrt_star_path: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/anytime_rrt_star_path_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: InformedRRTStarTree
+      Namespaces: {informed_rrt_star_tree: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/informed_rrt_star_tree_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: InformedRRTStarPath
+      Namespaces: {informed_rrt_star_path: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/informed_rrt_star_path_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: StartAndGoal
+      Namespaces: {start_and_goal: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/endpoints_vis
+      Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz_default_plugins/Path
+      Color: 255; 25; 25
+      Enabled: false
+      Head Diameter: 0.3
+      Head Length: 0.2
+      Length: 0.3
+      Line Style: Lines
+      Line Width: 0.03
+      Name: AStarPathMessage
+      Offset: {X: 0, Y: 0, Z: 0}
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.03
+      Shaft Diameter: 0.1
+      Shaft Length: 0.1
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/astar_path
+      Value: false
+  Enabled: true
+  Global Options:
+    Background Color: 245; 245; 220
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_plugins/Goal3DTool
+      Topic: /goal
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+    - Class: rviz_default_plugins/SetInitialPose
+      Covariance x: 0.25
+      Covariance y: 0.25
+      Covariance yaw: 0.06853891945200942
+      Topic: /initialpose
+    - Class: rviz_default_plugins/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Value: true
+  Views:
+    Current:
+      Angle: 0
+      Class: rviz_default_plugins/TopDownOrtho
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.01
+      Scale: 22
+      Target Frame: <Fixed Frame>
+      X: 0
+      Y: 0
+    Saved: ~
+Window Geometry:
+  Height: 900
+  Width: 1440
+  X: 60
+  Y: 40

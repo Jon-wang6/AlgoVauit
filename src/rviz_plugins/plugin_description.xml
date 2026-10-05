@@ -1,0 +1,13 @@
+<!--
+  文件：plugin_description.xml
+  用途：向 pluginlib/RViz2 注册本项目的三维目标工具。
+  包含的类：rviz_plugins::Goal3DTool；基类为 rviz_common::Tool。
+  包含的函数：无；运行时由 pluginlib 根据 library/class 映射加载共享库和类。
+-->
+<library path="rviz_plugins">
+  <class name="rviz_plugins/Goal3DTool"
+         type="rviz_plugins::Goal3DTool"
+         base_class_type="rviz_common::Tool">
+    <description>在 RViz2 中交互选择位置、航向与高度并发布三维导航目标。</description>
+  </class>
+</library>

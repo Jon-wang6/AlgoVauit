@@ -1,0 +1,38 @@
+// 文件：settings.json
+// 用途：保存 ws11 的 VS Code 工作区级 C/C++、Python 与文件关联设置。
+// 包含的类与函数：无；主要配置编译数据库、ROS 2/Python 搜索路径、IntelliSense
+// 模式和头文件类型关联。VS Code 按 JSON with Comments 语法读取本文件。
+{
+  "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+  "C_Cpp.default.compilerPath": "/usr/bin/g++",
+  "C_Cpp.default.cppStandard": "c++17",
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/src/**",
+    "${workspaceFolder}/install/**",
+    "/opt/ros/humble/include/**",
+    "/usr/include/eigen3",
+    "/usr/include/**"
+  ],
+  "C_Cpp.default.browse.path": [
+    "${workspaceFolder}/src",
+    "${workspaceFolder}/install",
+    "/opt/ros/humble/include",
+    "/usr/include/eigen3",
+    "/usr/include"
+  ],
+  "C_Cpp.errorSquiggles": "enabled",
+  "C_Cpp.intelliSenseEngine": "default",
+  "cmake.configureOnOpen": false,
+  "python.analysis.extraPaths": [
+    "/opt/ros/humble/lib/python3.10/site-packages",
+    "${workspaceFolder}/install/grid_path_searcher/lib/python3.10/site-packages",
+    "${workspaceFolder}/install/rviz_plugins/lib/python3.10/site-packages",
+    "${workspaceFolder}/install/waypoint_generator/lib/python3.10/site-packages"
+  ],
+  "files.associations": {
+    "*.rviz": "yaml",
+    "*_launch.py": "python"
+  }
+}
