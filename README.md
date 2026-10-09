@@ -32,4 +32,4 @@ git clone --branch path-planning --single-branch https://github.com/Jon-wang6/Al
 
 ## 参考资料
 
-- [ROS 2 二维路径规划算法学习与实现](https://www.yuque.com/g/jonwang-pfbbk/gd0so3/aisohqo8yfbk70np/collaborator/join?token=QXzK0gTytpligebR&source=doc_collaborator#)
+- [ROS 2 二维路径规划算法学习与实现](https://github.com/Jon-wang6/AlgoVauit/blob/path-planning/notes/ROS2二维路径规划算法学习与实现.md)
