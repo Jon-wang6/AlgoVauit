@@ -1,35 +1,26 @@
-# AlgoVauit
+# AlgoVauit · 机器人学基础
 
-算法学习、实现与可视化实验仓库。`main` 分支仅作为导航首页，各主题保存在独立分支中。
+本分支用于整理机器人学基础知识与学习笔记，当前内容以机器人空间位姿描述和坐标变换为主。
 
-## 分支导航
+分支导航：[main](https://github.com/Jon-wang6/AlgoVauit/tree/main) · [path-planning](https://github.com/Jon-wang6/AlgoVauit/tree/path-planning) · **robotics**
 
-| 分支 | 对应目录 | 主要内容 |
-| --- | --- | --- |
-| [`path-planning`](https://github.com/Jon-wang6/AlgoVauit/tree/path-planning) | `~/ws11` | ROS 2 二维路径规划、RViz2 可视化与算法性能对比 |
+## 学习内容
 
-## 路径规划算法
+- 自由度、广义坐标、关节空间与操作空间
+- 坐标系、旋转矩阵与平移向量
+- 齐次坐标、齐次变换与复合变换
+- 固定角、欧拉角、轴角与欧拉参数
+- 机械臂正逆运动学、雅可比矩阵和轨迹规划的前置知识
 
-`path-planning` 分支目前包含：
+## 学习笔记
 
-- A* 与 TimeBreak A*
-- Dijkstra
-- JPS
-- PRM
-- RRT、RRT*、Anytime RRT*、Informed RRT* 与 Kinodynamic RRT*
-- 二维 OccupancyGrid 随机地图演示
-- RViz2 交互目标工具和实时参数面板
+- [机器人空间位姿描述](notes/机器人空间位姿描述.md)
 
-仓库中保留早期三维路径规划示例代码，仅供参考。
+笔记中的配图均保存在 `notes/images/`，不依赖外部语雀图片链接。
 
-克隆该分支：
+## 获取本分支
 
 ```bash
-git clone --branch path-planning --single-branch https://github.com/Jon-wang6/AlgoVauit.git ws11
+git clone --branch robotics --single-branch https://github.com/Jon-wang6/AlgoVauit.git robotics
+cd robotics
 ```
-
-具体构建、启动和操作说明请查看对应分支中的 README。
-
-## 参考资料
-
-- [ROS 2 二维路径规划算法学习与实现](https://github.com/Jon-wang6/AlgoVauit/blob/path-planning/notes/ROS2二维路径规划算法学习与实现.md)
