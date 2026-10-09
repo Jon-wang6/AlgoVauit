@@ -31,7 +31,7 @@ git clone --branch path-planning --single-branch https://github.com/Jon-wang6/Al
 
 具体构建、启动和操作说明请查看对应分支中的 README。
 
-## 参考资料
+## 学习笔记
 
 - [ROS 2 二维路径规划算法学习与实现](https://github.com/Jon-wang6/AlgoVauit/blob/path-planning/notes/ROS2二维路径规划算法学习与实现.md)
 - [机器人空间位姿描述](https://github.com/Jon-wang6/AlgoVauit/blob/robotics/notes/机器人空间位姿描述.md)
