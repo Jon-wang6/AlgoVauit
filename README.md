@@ -100,4 +100,4 @@ ros2 launch grid_path_searcher_2d demo_launch.py map_seed:=11
 
 ## 参考资料
 
-- [ROS 2 二维路径规划算法学习与实现](https://www.yuque.com/g/jonwang-pfbbk/gd0so3/aisohqo8yfbk70np/collaborator/join?token=QXzK0gTytpligebR&source=doc_collaborator#)
+- [ROS 2 二维路径规划算法学习与实现](notes/ROS2二维路径规划算法学习与实现.md)
