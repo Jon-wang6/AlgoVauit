@@ -14,6 +14,7 @@
 | `include/grid_path_searcher_2d/grid_searcher_2d.hpp` | 声明数据结构及每种算法名称明确的公开入口。 |
 | `src/grid_map_2d.cpp` | 地图判断、坐标转换、路径回溯和直线碰撞检测。 |
 | `src/grid_search_astar.cpp` | Dijkstra、A* 与 TimeBreak A*，可直接对比三者区别。 |
+| `src/grid_search_theta_star.cpp` | Theta* 的视线检测、祖先节点松弛和任意角度路径。 |
 | `src/grid_search_jps.cpp` | 强迫邻居、跳跃函数和 JPS 主循环。 |
 | `src/grid_search_prm.cpp` | PRM 采样、连边和路线图 Dijkstra。 |
 | `src/grid_search_rrt.cpp` | RRT 的 Sample、Nearest、Steer 和路径回溯。 |
@@ -36,9 +37,10 @@
 3. 阅读 `searchDijkstra()`、`searchAStar()` 及共用的
    `searchWithPriorityQueue()`，重点理解开放队列、松弛和父节点回溯；
 4. 阅读 `searchTimedAStar()`，观察时间检查在普通 A* 的哪一步发生；
-5. 阅读 `hasForcedNeighbor()`、`jump()`、`searchJps()`，理解 JPS 如何跳格；
-6. 阅读 `searchPrm()` 的采样、连边、视线检测和图上 Dijkstra；
-7. 最后对比 `searchRrt()` 与 `searchRrtStar()` 的采样、扩展、择父和重连。
+5. 阅读 `searchThetaStar()`，观察父节点可见时如何跳过中间折点；
+6. 阅读 `hasForcedNeighbor()`、`jump()`、`searchJps()`，理解 JPS 如何跳格；
+7. 阅读 `searchPrm()` 的采样、连边、视线检测和图上 Dijkstra；
+8. 最后对比 `searchRrt()` 与 `searchRrtStar()` 的采样、扩展、择父和重连。
 
 A* 和 Dijkstra 虽然共用核心循环，但对外不再使用难以理解的布尔参数。调用处
 直接写 `searchAStar(start, goal)` 或 `searchDijkstra(start, goal)`；PRM 和
@@ -50,6 +52,7 @@ RRT* 的邻居记录也使用 `node_index`、`distance` 等命名字段，不使
 ```text
 random_map_2d --OccupancyGrid--> demo_node_2d
                                   ├─ A* 搜索 → 红色路径 + 橙色访问节点
+                                  ├─ Theta* → 青色任意角度路径 + 浅蓝访问节点
                                   ├─ TimeBreak A* → 粉红路径 + 紫色访问节点
                                   ├─ Dijkstra → 蓝色对照路径
                                   ├─ JPS → 绿色路径 + 亮青色跳点
@@ -118,15 +121,15 @@ Anytime-RRT* 得到首条路径后不会立即结束，而是在时间/迭代预
 Informed RRT* 首解前全地图采样；首解后只在以起点和终点为焦点、当前最优路径
 长度决定长轴的椭圆内采样，把后续计算集中到可能改善路径的区域。
 
-RViz 左侧的 **全部算法参数** 面板可实时修改地图通行规则、A*/TimeBreak A*/JPS
+RViz 左侧的 **全部算法参数** 面板可实时修改地图通行规则、A*/Theta*/TimeBreak A*/JPS
 启发权重、TimeBreak 时间上限，以及 PRM、RRT、RRT*、Kinodynamic-RRT*、
 Anytime-RRT*、Informed RRT* 的全部可调参数。面板可滚动；停止输入 250 ms 后
 参数自动发送，`demo_node_2d` 会立即使用当前终点重新规划。Dijkstra 严格按累计
 代价 `g` 排序，本身没有启发权重或随机采样参数，所以面板只显示说明。
 
-启发权重为 `1` 时是标准 A*/JPS；设为 `0` 时按 Dijkstra 式优先级搜索；大于
+启发权重为 `1` 时是标准 A*/Theta*/JPS；设为 `0` 时只按累计代价引导搜索；大于
 `1` 时会更偏向终点、通常扩展更少，但不再保证得到最短路径。
 
-每次规划都会输出全部十种算法的计算耗时，单位为毫秒。
+每次规划都会输出全部十一种算法的计算耗时，单位为毫秒。
 PRM 的计时包含随机采样、路线图构建、视线碰撞检测和图搜索，不包含 RViz
 消息生成与发布；其他算法同样只统计搜索调用，因此可以直接比较计算开销。

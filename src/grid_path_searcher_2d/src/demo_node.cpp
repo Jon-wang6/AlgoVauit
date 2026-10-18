@@ -1,10 +1,10 @@
 /**
  * @file demo_node.cpp
- * @brief 二维 A*、TimeBreak A*、Dijkstra、JPS、PRM 与五种 RRT 系算法演示节点。
+ * @brief 二维 A*、Theta*、TimeBreak A*、Dijkstra、JPS、PRM 与五种 RRT 系算法演示节点。
  *
  * 文件职责：接收随机 OccupancyGrid 和 waypoint_generator 的目标，调用
- * GridSearcher2D 完成十种算法搜索，并将每个障碍栅格作为独立方形像素发布，
- * 使用 steady_clock 分别统计十种算法的纯计算时间，同时向 RViz2 发布访问
+ * GridSearcher2D 完成十一种算法搜索，并将每个障碍栅格作为独立方形像素发布，
+ * 使用 steady_clock 分别统计十一种算法的纯计算时间，同时向 RViz2 发布访问
  * 节点、起终点和规划路径。
  *
  * 包含的类：PlannerDemoNode，负责参数、话题连接、规划和 Marker 生成。
@@ -52,6 +52,7 @@ public:
     occupied_threshold_ = declare_parameter("map.occupied_threshold", 50);
     allow_unknown_ = declare_parameter("map.allow_unknown", false);
     astar_heuristic_weight_ = declare_parameter("astar.heuristic_weight", 1.0);
+    theta_star_heuristic_weight_ = declare_parameter("theta_star.heuristic_weight", 1.0);
     timed_astar_heuristic_weight_ =
       declare_parameter("timed_astar.heuristic_weight", 1.0);
     jps_heuristic_weight_ = declare_parameter("jps.heuristic_weight", 1.0);
@@ -98,6 +99,8 @@ public:
     const auto latched_qos = rclcpp::QoS(1).reliable().transient_local();
     map_pub_ = create_publisher<nav_msgs::msg::OccupancyGrid>("~/grid_map_vis", latched_qos);
     astar_path_pub_ = create_publisher<nav_msgs::msg::Path>("~/astar_path", latched_qos);
+    theta_star_path_pub_ =
+      create_publisher<nav_msgs::msg::Path>("~/theta_star_path", latched_qos);
     timed_astar_path_pub_ = create_publisher<nav_msgs::msg::Path>(
       "~/timed_astar_path", latched_qos);
     dijkstra_path_pub_ = create_publisher<nav_msgs::msg::Path>("~/dijkstra_path", latched_qos);
@@ -113,6 +116,10 @@ public:
       create_publisher<nav_msgs::msg::Path>("~/informed_rrt_star_path", latched_qos);
     astar_marker_pub_ = create_publisher<visualization_msgs::msg::Marker>(
       "~/astar_path_vis", latched_qos);
+    theta_star_marker_pub_ = create_publisher<visualization_msgs::msg::Marker>(
+      "~/theta_star_path_vis", latched_qos);
+    theta_star_visited_pub_ = create_publisher<visualization_msgs::msg::Marker>(
+      "~/theta_star_visited_vis", latched_qos);
     timed_astar_marker_pub_ = create_publisher<visualization_msgs::msg::Marker>(
       "~/timed_astar_path_vis", latched_qos);
     timed_astar_visited_pub_ = create_publisher<visualization_msgs::msg::Marker>(
@@ -193,6 +200,14 @@ private:
           return result;
         }
         astar_heuristic_weight_ = value;
+      } else if (name == "theta_star.heuristic_weight") {
+        const double value = parameter.as_double();
+        if (value < 0.0 || value > 5.0) {
+          result.successful = false;
+          result.reason = "theta_star.heuristic_weight must be in [0, 5]";
+          return result;
+        }
+        theta_star_heuristic_weight_ = value;
       } else if (name == "timed_astar.heuristic_weight") {
         const double value = parameter.as_double();
         if (value < 0.0 || value > 5.0) {
@@ -810,6 +825,38 @@ private:
       result.cost, result.path.size(), result.visited.size(), timed_astar_limit_ms_);
   }
 
+  /** 发布 Theta* 的青色任意角度路径和浅蓝色访问节点。 */
+  void publishThetaStarResult(const SearchResult & result)
+  {
+    theta_star_visited_pub_->publish(makeMarker(
+      result.visited, "theta_star_visited", visualization_msgs::msg::Marker::POINTS,
+      0.15F, 0.65F, 0.95F,
+      std::max(0.025, static_cast<double>(map_.info.resolution) * 0.22)));
+    if (!result.success) {
+      RCLCPP_WARN(get_logger(), "Theta* could not find a path");
+      return;
+    }
+
+    nav_msgs::msg::Path path;
+    path.header.frame_id = map_.header.frame_id.empty() ? "map" : map_.header.frame_id;
+    path.header.stamp = now();
+    for (const auto & cell : result.path) {
+      geometry_msgs::msg::PoseStamped pose;
+      pose.header = path.header;
+      pose.pose.position = searcher_.gridToWorld(cell);
+      pose.pose.orientation.w = 1.0;
+      path.poses.push_back(pose);
+    }
+    theta_star_path_pub_->publish(path);
+    theta_star_marker_pub_->publish(makeMarker(
+      result.path, "theta_star_path", visualization_msgs::msg::Marker::LINE_STRIP,
+      0.0F, 0.82F, 1.0F,
+      std::max(0.07, static_cast<double>(map_.info.resolution) * 0.50)));
+    RCLCPP_INFO(
+      get_logger(), "Theta* success: cost=%.3f m, path vertices=%zu, visited=%zu",
+      result.cost, result.path.size(), result.visited.size());
+  }
+
   /** 发布绿色 JPS 折线路径以及亮青色、普通栅格大小的关键跳点。 */
   void publishJpsResult(const SearchResult & result)
   {
@@ -931,7 +978,7 @@ private:
   }
 
   /**
-   * 规划步骤：世界坐标转栅格 → 执行十种算法 → 发布搜索结果、JPS 跳点、
+   * 规划步骤：世界坐标转栅格 → 执行十一种算法 → 发布搜索结果、JPS 跳点、
    * PRM 路线图，以及各 RRT/RRT* 变体的搜索树。
    */
   void planTo(const double goal_x, const double goal_y)
@@ -956,6 +1003,12 @@ private:
     const auto astar_result = searcher_.searchAStar(start, goal, astar_heuristic_weight_);
     const double astar_ms = std::chrono::duration<double, std::milli>(
       std::chrono::steady_clock::now() - astar_begin).count();
+
+    const auto theta_star_begin = std::chrono::steady_clock::now();
+    const auto theta_star_result = searcher_.searchThetaStar(
+      start, goal, theta_star_heuristic_weight_);
+    const double theta_star_ms = std::chrono::duration<double, std::milli>(
+      std::chrono::steady_clock::now() - theta_star_begin).count();
 
     const auto timed_astar_begin = std::chrono::steady_clock::now();
     const auto timed_astar_result = searcher_.searchTimedAStar(
@@ -1016,6 +1069,9 @@ private:
 
     RCLCPP_INFO(get_logger(), "A* computation time: %.3f ms", astar_ms);
     RCLCPP_INFO(
+      get_logger(), "Theta* computation time: %.3f ms (line-of-sight relaxation)",
+      theta_star_ms);
+    RCLCPP_INFO(
       get_logger(), "TimeBreak A* computation time: %.3f ms (limit %.3f ms, %s)",
       timed_astar_ms, timed_astar_limit_ms_, timed_astar_result.timed_out ? "timeout" : "finished");
     RCLCPP_INFO(get_logger(), "Dijkstra computation time: %.3f ms", dijkstra_ms);
@@ -1041,6 +1097,7 @@ private:
       astar_result.visited, "astar_visited", visualization_msgs::msg::Marker::POINTS,
       1.0F, 0.72F, 0.0F, std::max(0.025, static_cast<double>(map_.info.resolution) * 0.22)));
     publishResult(astar_result, true, astar_path_pub_, astar_marker_pub_);
+    publishThetaStarResult(theta_star_result);
     publishTimedAStarResult(timed_astar_result);
     publishResult(dijkstra_result, false, dijkstra_path_pub_, dijkstra_marker_pub_);
     publishJpsResult(jps_result);
@@ -1067,6 +1124,7 @@ private:
   double default_goal_y_{8.0};
   int occupied_threshold_{50};
   double astar_heuristic_weight_{1.0};
+  double theta_star_heuristic_weight_{1.0};
   double timed_astar_heuristic_weight_{1.0};
   double jps_heuristic_weight_{1.0};
   int prm_sample_count_{500};
@@ -1116,6 +1174,7 @@ private:
   rclcpp::TimerBase::SharedPtr parameter_timer_;
   rclcpp::Publisher<nav_msgs::msg::OccupancyGrid>::SharedPtr map_pub_;
   rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr astar_path_pub_;
+  rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr theta_star_path_pub_;
   rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr timed_astar_path_pub_;
   rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr dijkstra_path_pub_;
   rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr jps_path_pub_;
@@ -1126,6 +1185,8 @@ private:
   rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr anytime_path_pub_;
   rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr informed_path_pub_;
   rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr astar_marker_pub_;
+  rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr theta_star_marker_pub_;
+  rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr theta_star_visited_pub_;
   rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr timed_astar_marker_pub_;
   rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr timed_astar_visited_pub_;
   rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr dijkstra_marker_pub_;

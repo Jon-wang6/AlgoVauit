@@ -8,6 +8,6 @@
   <class name="grid_path_searcher_2d/RrtStarPanel"
          type="grid_path_searcher_2d::RrtStarPanel"
          base_class_type="rviz_common::Panel">
-    <description>实时调整二维地图和全部十种规划算法的可调参数。</description>
+    <description>实时调整二维地图和全部十一种规划算法的可调参数。</description>
   </class>
 </library>

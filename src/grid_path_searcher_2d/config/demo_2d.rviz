@@ -1,5 +1,5 @@
 # 文件：demo_2d.rviz
-# 用途：逐像素障碍、地面小格及十种二维规划算法的 RViz2 配置。
+# 用途：逐像素障碍、地面小格及十一种二维规划算法的 RViz2 配置。
 # 包含的类与函数：无源码类/函数；配置多个 Marker、Path、Goal3DTool 和俯视视角。
 # 数据流程：订阅 demo_node_2d 输出；Goal3DTool 向 /goal 发布新目标。
 Panels:
@@ -61,6 +61,28 @@ Visualization Manager:
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /demo_node_2d/astar_path_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: ThetaStarVisited
+      Namespaces: {theta_star_visited: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/theta_star_visited_vis
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: ThetaStarPath
+      Namespaces: {theta_star_path: true}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /demo_node_2d/theta_star_path_vis
       Value: true
     - Class: rviz_default_plugins/Marker
       Enabled: true

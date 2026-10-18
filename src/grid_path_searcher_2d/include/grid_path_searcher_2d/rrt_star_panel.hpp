@@ -2,7 +2,7 @@
  * @file rrt_star_panel.hpp
  * @brief RViz2 中实时调整全部二维规划算法参数的面板声明。
  *
- * 文件职责：按地图、A*、TimeBreak A*、JPS、PRM、RRT、RRT* 及三种 RRT*
+ * 文件职责：按地图、A*、Theta*、TimeBreak A*、JPS、PRM、RRT、RRT* 及三种 RRT*
  * 变体分组定义控件，并通过 ROS 2 参数客户端把数值发送给 /demo_node_2d。
  *
  * 包含的类：RrtStarPanel，继承 rviz_common::Panel。
@@ -45,6 +45,7 @@ private:
   QSpinBox * occupied_threshold_{nullptr};
   QCheckBox * allow_unknown_{nullptr};
   QDoubleSpinBox * astar_weight_{nullptr};
+  QDoubleSpinBox * theta_star_weight_{nullptr};
   QDoubleSpinBox * timed_astar_weight_{nullptr};
   QDoubleSpinBox * timed_astar_limit_{nullptr};
   QDoubleSpinBox * jps_weight_{nullptr};

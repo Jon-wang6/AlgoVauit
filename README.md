@@ -21,6 +21,7 @@ cd ws11
 | --- | --- |
 | Dijkstra | 无启发式的最短路基准算法。 |
 | A* | 使用启发函数加速栅格搜索。 |
+| Theta* | 在 A* 搜索中加入视线检测，生成折点更少的任意角度路径。 |
 | TimeBreak A* | 受时间预算约束的 A* 版本。 |
 | JPS | 通过跳点和强迫邻居减少扩展节点。 |
 | PRM | 先随机采样构建路线图，再执行图搜索。 |
@@ -37,6 +38,7 @@ cd ws11
 | `src/grid_path_searcher_2d/include/grid_path_searcher_2d/grid_searcher_2d.hpp` | 声明二维地图索引、搜索结果和算法接口。 |
 | `src/grid_path_searcher_2d/src/grid_map_2d.cpp` | 实现坐标转换、占据判断、路径回溯与碰撞检测。 |
 | `src/grid_path_searcher_2d/src/grid_search_astar.cpp` | 实现 Dijkstra、A* 与 TimeBreak A*。 |
+| `src/grid_path_searcher_2d/src/grid_search_theta_star.cpp` | 实现带视线检测和祖先节点松弛的 Theta*。 |
 | `src/grid_path_searcher_2d/src/grid_search_jps.cpp` | 实现 JPS 邻居判断、跳跃和搜索主循环。 |
 | `src/grid_path_searcher_2d/src/grid_search_prm.cpp` | 实现 PRM 采样、路线图构建和图上搜索。 |
 | `src/grid_path_searcher_2d/src/grid_search_rrt.cpp` | 实现基础 RRT。 |
@@ -50,7 +52,7 @@ cd ws11
 | `src/grid_path_searcher_2d/launch/demo_launch.py` | 启动二维地图、规划节点、目标点节点与 RViz2。 |
 | `src/grid_path_searcher_2d/config/demo_2d.rviz` | 配置地图、搜索区域和各算法路径的显示效果。 |
 
-推荐按“公共地图工具 → A*/Dijkstra → JPS → PRM → RRT 系列 → 演示节点”的顺序阅读源码。
+推荐按“公共地图工具 → A*/Dijkstra → Theta* → JPS → PRM → RRT 系列 → 演示节点”的顺序阅读源码。
 
 ## 运行逻辑
 
@@ -58,7 +60,7 @@ cd ws11
 random_map_node
   └─ 随机二维 OccupancyGrid
        └─ demo_node
-            ├─ Dijkstra / A* / TimeBreak A*
+            ├─ Dijkstra / A* / Theta* / TimeBreak A*
             ├─ JPS / PRM
             ├─ RRT / RRT*
             ├─ Anytime RRT* / Informed RRT*
@@ -92,7 +94,7 @@ RViz2 打开后可按 `G` 使用目标点工具；二维规划只读取目标的
 ros2 launch grid_path_searcher_2d demo_launch.py map_seed:=11
 ```
 
-使用 `map_seed:=-1` 时，每次启动都会生成新的随机地图。TimeBreak A* 默认时间预算为 2 ms；PRM 与 RRT 系列的采样数量、迭代次数、步长、目标偏置和随机种子可通过启动参数或 RViz2 面板调整。
+使用 `map_seed:=-1` 时，每次启动都会生成新的随机地图。A*、Theta* 与 JPS 的启发权重、TimeBreak A* 的时间预算，以及 PRM 与 RRT 系列的采样数量、迭代次数、步长、目标偏置和随机种子均可通过启动参数或 RViz2 面板调整。
 
 ## RViz2 参数面板
 

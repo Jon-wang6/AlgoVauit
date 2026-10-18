@@ -49,6 +49,7 @@ def generate_launch_description():
                 "map.occupied_threshold": 50,
                 "map.allow_unknown": False,
                 "astar.heuristic_weight": 1.0,
+                "theta_star.heuristic_weight": 1.0,
                 "timed_astar.heuristic_weight": 1.0,
                 "jps.heuristic_weight": 1.0,
                 "prm.sample_count": 500,

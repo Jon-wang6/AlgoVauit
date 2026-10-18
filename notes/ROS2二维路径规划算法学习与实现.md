@@ -14,6 +14,7 @@
 
 + Dijkstra
 + A*
++ Theta*
 + TimeBreak A*
 + JPS
 + PRM
@@ -35,13 +36,14 @@ DFS、BFS、全局规划器、局部规划器、Nav2、OMPL、MoveIt 2 等内容
 2. 理解世界坐标和栅格坐标之间的转换。
 3. 理解队列、优先队列、父节点表等数据结构。
 4. 掌握 Dijkstra 和 A* 的搜索过程。
-5. 理解 JPS 如何通过跳点减少搜索节点。
-6. 理解 PRM 的采样、连边和视线碰撞检测。
-7. 理解 RRT 如何通过随机采样生成搜索树。
-8. 理解 RRT* 的选择父节点和重新连接过程。
-9. 了解 Kinodynamic-RRT*、Anytime-RRT* 和 Informed RRT*。
-10. 使用 RViz2 显示地图、搜索过程、路径和算法参数。
-11. 比较不同算法的计算时间和路径效果。
+5. 理解 Theta* 如何通过视线检测生成任意角度路径。
+6. 理解 JPS 如何通过跳点减少搜索节点。
+7. 理解 PRM 的采样、连边和视线碰撞检测。
+8. 理解 RRT 如何通过随机采样生成搜索树。
+9. 理解 RRT* 的选择父节点和重新连接过程。
+10. 了解 Kinodynamic-RRT*、Anytime-RRT* 和 Informed RRT*。
+11. 使用 RViz2 显示地图、搜索过程、路径和算法参数。
+12. 比较不同算法的计算时间和路径效果。
 
 ---
 
@@ -164,6 +166,7 @@ geometry_msgs::msg::Point gridToWorld(
 
 + Dijkstra
 + A*
++ Theta*
 + JPS
 + PRM
 + RRT
@@ -222,6 +225,7 @@ grid_path_searcher_2d/
     ├── random_map_node.cpp
     ├── grid_map_2d.cpp
     ├── grid_search_astar.cpp
+    ├── grid_search_theta_star.cpp
     ├── grid_search_jps.cpp
     ├── grid_search_prm.cpp
     ├── grid_search_rrt.cpp
@@ -241,6 +245,7 @@ grid_path_searcher_2d/
 | `grid_searcher_2d.hpp` | 声明数据结构、类和算法接口 |
 | `grid_map_2d.cpp` | 地图判断、坐标转换、路径回溯和直线碰撞检测 |
 | `grid_search_astar.cpp` | Dijkstra、A* 和 TimeBreak A* |
+| `grid_search_theta_star.cpp` | Theta* 视线检测与祖先节点松弛 |
 | `grid_search_jps.cpp` | JPS、强迫邻居和跳点搜索 |
 | `grid_search_prm.cpp` | PRM 采样、连边和图搜索 |
 | `grid_search_rrt.cpp` | RRT 随机树 |
@@ -316,6 +321,7 @@ demo_node_2d
     │
     ├── Dijkstra
     ├── A*
+    ├── Theta*
     ├── TimeBreak A*
     ├── JPS
     ├── PRM
@@ -989,6 +995,50 @@ else
 + 地图较大时仍可能访问很多格子；
 + 启发函数设计会影响搜索效果；
 + 动态环境中需要重新规划。
+
+---
+
+### 8.6 Theta*：把 A* 的栅格折线拉直
+
+Theta* 可以看作加入视线检测的 A*。普通 A* 的每个节点只能把相邻格子作为
+父节点，因此路径会受到八邻域方向限制；Theta* 扩展邻居时，还会检查当前节点
+的父节点能否直接看见这个邻居。
+
+```text
+普通 A*：起点 ●──A──B──C──◎ 终点
+
+Theta*：  起点 ●────────C──◎ 终点
+                 视线无障碍
+```
+
+对于当前节点 `s` 和它的邻居 `s'`，程序先计算普通相邻走法：
+
+```latex
+g_{normal} = g(s) + distance(s, s')
+```
+
+如果 `parent(s)` 到 `s'` 的整条线段都可通行，则尝试祖先捷径：
+
+```latex
+g_{shortcut} = g(parent(s)) + distance(parent(s), s')
+```
+
+捷径代价更小时，`s'` 直接把 `parent(s)` 记为父节点。直线碰撞检测使用
+Bresenham 栅格遍历，并禁止从两个障碍格之间斜穿墙角。Theta* 的启发函数采用
+欧氏距离，因为任意角度边的实际代价也是两点间的直线距离。
+
+当前实现入口为：
+
+```cpp
+SearchResult searchThetaStar(
+    const GridIndex & start,
+    const GridIndex & goal,
+    double heuristic_weight = 1.0) const;
+```
+
+默认 `heuristic_weight=1.0`。它通常比 A* 产生更少的路径顶点和更短、更自然的
+折线，但每次松弛都可能进行视线碰撞检测，所以单次扩展的计算量更大。Theta*
+仍然在栅格上搜索，并不是完全连续空间规划；地图分辨率和障碍膨胀仍会影响结果。
 
 ---
 
@@ -1762,6 +1812,8 @@ c_best
 | 终点 | 紫色 |
 | A*路径 | 红色 |
 | A*访问节点 | 橙色 |
+| Theta*路径 | 青色 |
+| Theta*访问节点 | 浅蓝色 |
 | TimeBreak A*路径 | 粉红色 |
 | TimeBreak A*访问节点 | 紫色 |
 | Dijkstra路径 | 蓝色 |
@@ -1835,6 +1887,7 @@ RViz2 左侧的“全部算法参数”面板可以实时调整：
 + 地图占据阈值；
 + 未知区域是否允许通行；
 + A*启发权重；
++ Theta*启发权重；
 + TimeBreak A*启发权重；
 + TimeBreak A*时间限制；
 + JPS启发权重；
@@ -1910,7 +1963,7 @@ ros2 launch grid_path_searcher_2d demo_launch.py map_seed:=11
 
 ## 十九、计算时间输出
 
-每次规划时，程序会统计十种算法的计算时间，单位为毫秒。
+每次规划时，程序会统计十一种算法的计算时间，单位为毫秒。
 
 计时基本形式为：
 
@@ -1951,6 +2004,7 @@ PRM 的计算时间包含：
 | BFS | 否 | 否 | 单位代价下最优 | 按层搜索 |
 | Dijkstra | 否 | 否 | 最优 | 从起点向四周扩散 |
 | A* | 是 | 否 | 标准条件下最优 | 使用终点方向引导搜索 |
+| Theta* | 是 | 否 | 通常近似最优 | 视线检测减少折点，生成任意角度路径 |
 | TimeBreak A* | 是 | 否 | 未超时时同A* | 增加时间预算限制 |
 | JPS | 是 | 否 | 规则条件下最优 | 跳过大量对称节点 |
 | PRM | 图搜索阶段可最优 | 是 | 依赖路线图 | 先构图，再查询路径 |
@@ -2440,6 +2494,7 @@ Nav2包含：
 
 + Dijkstra
 + A*
++ Theta*
 + TimeBreak A*
 + JPS
 
@@ -2449,6 +2504,7 @@ Nav2包含：
 
 + Dijkstra只使用真实代价；
 + A*增加终点方向；
++ Theta*通过祖先节点视线检测减少路径折点；
 + TimeBreak A*增加时间预算；
 + JPS通过跳点减少无意义扩展。
 

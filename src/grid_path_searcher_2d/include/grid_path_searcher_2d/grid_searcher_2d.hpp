@@ -3,16 +3,16 @@
  * @brief 二维占据栅格搜索算法的数据结构与公开接口。
  *
  * 文件职责：定义二维栅格索引、搜索结果和 GridSearcher2D 类，供 ROS 2 节点
- * 导入 OccupancyGrid 后执行 A*、TimeBreak A*、Dijkstra、JPS、PRM、RRT 或 RRT*。
+ * 导入 OccupancyGrid 后执行 A*、Theta*、TimeBreak A*、Dijkstra、JPS、PRM、RRT 或 RRT*。
  *
  * 包含的类/结构：
  * - GridIndex：二维整数栅格坐标。
  * - GridEdge：PRM 路线图中的一条无碰撞连接边。
  * - SearchResult：搜索是否成功、路径、访问节点、JPS 跳点及采样算法边。
- * - GridSearcher2D：地图管理、坐标转换和十种路径搜索算法。
+ * - GridSearcher2D：地图管理、坐标转换和十一种路径搜索算法。
  *
  * 包含的函数：setMap()、worldToGrid()、gridToWorld()、searchAStar()、
- * searchTimedAStar()、searchDijkstra()、searchJps()、searchPrm()、searchRrt()、
+ * searchThetaStar()、searchTimedAStar()、searchDijkstra()、searchJps()、searchPrm()、searchRrt()、
  * searchRrtStar()，以及地图判断、路径回溯、跳点判断和视线检测辅助函数。
  * 各算法实现已按算法拆分到独立 cpp 文件，便于按笔记顺序单独阅读。
  */
@@ -54,7 +54,7 @@ struct SearchResult
   std::vector<GridEdge> tree_edges;
 };
 
-/** 在 OccupancyGrid 上执行十种二维路径规划算法的搜索器。 */
+/** 在 OccupancyGrid 上执行十一种二维路径规划算法的搜索器。 */
 class GridSearcher2D
 {
 public:
@@ -71,6 +71,14 @@ public:
 
   /** 运行 A*：按照 f = g + weight*h 选择节点；weight=1 为标准 A*。 */
   SearchResult searchAStar(
+    const GridIndex & start, const GridIndex & goal,
+    double heuristic_weight = 1.0) const;
+
+  /**
+   * 运行 Theta*：沿用 A* 的开放队列，并在松弛邻居时尝试让邻居直接连接
+   * 当前节点的父节点；只有整条直线无碰撞时才采用这个任意角度捷径。
+   */
+  SearchResult searchThetaStar(
     const GridIndex & start, const GridIndex & goal,
     double heuristic_weight = 1.0) const;
 

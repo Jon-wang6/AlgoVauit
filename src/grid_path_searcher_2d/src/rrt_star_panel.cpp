@@ -2,7 +2,7 @@
  * @file rrt_star_panel.cpp
  * @brief 二维全部路径规划算法的 RViz 参数面板实现。
  *
- * 文件职责：用可滚动分组界面展示地图和十种算法的可调参数；控件停止变化
+ * 文件职责：用可滚动分组界面展示地图和十一种算法的可调参数；控件停止变化
  * 250 ms 后统一发送到 /demo_node_2d 并触发重规划。
  * Dijkstra 没有启发式或随机参数，因此只显示说明文字。
  */
@@ -80,6 +80,17 @@ RrtStarPanel::RrtStarPanel(QWidget * parent) : rviz_common::Panel(parent)
   astar_form->addRow("A* 启发权重", astar_weight_);
   astar_form->addRow(dijkstra_hint);
   content_layout->addWidget(astar_group);
+
+  auto * theta_star_group = new QGroupBox("Theta*", content);
+  auto * theta_star_form = new QFormLayout(theta_star_group);
+  theta_star_weight_ =
+    makeDoubleControl(theta_star_group, 0.0, 5.0, 0.1, 1.0, 2);
+  auto * theta_star_hint = new QLabel(
+    "通过视线检测连接祖先节点，减少栅格折点。", theta_star_group);
+  theta_star_hint->setWordWrap(true);
+  theta_star_form->addRow("启发权重", theta_star_weight_);
+  theta_star_form->addRow(theta_star_hint);
+  content_layout->addWidget(theta_star_group);
 
   auto * timed_group = new QGroupBox("TimeBreak A*", content);
   auto * timed_form = new QFormLayout(timed_group);
@@ -224,6 +235,7 @@ RrtStarPanel::RrtStarPanel(QWidget * parent) : rviz_common::Panel(parent)
   connect_integer(occupied_threshold_);
   connect(allow_unknown_, &QCheckBox::toggled, this, [this](bool) {scheduleUpdate();});
   connect_double(astar_weight_);
+  connect_double(theta_star_weight_);
   connect_double(timed_astar_weight_);
   connect_double(timed_astar_limit_);
   connect_double(jps_weight_);
@@ -291,6 +303,7 @@ void RrtStarPanel::applyParameters()
     rclcpp::Parameter("map.occupied_threshold", occupied_threshold_->value()),
     rclcpp::Parameter("map.allow_unknown", allow_unknown_->isChecked()),
     rclcpp::Parameter("astar.heuristic_weight", astar_weight_->value()),
+    rclcpp::Parameter("theta_star.heuristic_weight", theta_star_weight_->value()),
     rclcpp::Parameter("timed_astar.heuristic_weight", timed_astar_weight_->value()),
     rclcpp::Parameter("timed_astar.time_limit_ms", timed_astar_limit_->value()),
     rclcpp::Parameter("jps.heuristic_weight", jps_weight_->value()),

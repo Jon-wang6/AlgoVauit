@@ -26,6 +26,7 @@ find_package(visualization_msgs REQUIRED)
 add_library(grid_searcher_2d
   src/grid_map_2d.cpp
   src/grid_search_astar.cpp
+  src/grid_search_theta_star.cpp
   src/grid_search_jps.cpp
   src/grid_search_prm.cpp
   src/grid_search_rrt.cpp
