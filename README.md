@@ -13,7 +13,7 @@
 
 `path-planning` 分支目前包含：
 
-- A* 与 TimeBreak A*
+- A*、Theta* 与 TimeBreak A*
 - Dijkstra
 - JPS
 - PRM
